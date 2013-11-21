@@ -1,0 +1,40 @@
+DSS
+
+35
+E. Turban, J. Aronson, and T. Liang, Decision Support Systems and Intelligent Systems, 2nd ed. New Jersey: Pearson Education, Inc, 2005.
+
+26
+P. G. W. Keen, “Decision support systems: a research perspective,” In Decision
+support systems : issues and challenges, Oxford, New York, 1990.
+
+31
+D. J. Power, A Brief History of Decision Support System, May 2003. [Online].
+Available: http://www.dssresources.com
+
+vehicle scheduling
+
+20
+R. Freling, A. P. M. Wagelmans, and J. Paixao, “Models and algorithms for single
+depot vehicle scheduling,”Institute for Operations Research and the Management
+Sciences, vol. 2006, 2006.
+
+21
+S. P. Gayialis and I. P. Tatsiopoulos, “Design of an it-driven decision support system
+for vehicle routing and scheduling,” European Journal of Operational Research, vol.
+152, no. 2004, 2002.
+
+10
+S. Bunte and N.Kliewer, “An overview on vehicle scheduling models,” Decision Support and Operations Research, 2004.
+
+2
+R. D. Angel, W. L. Caudle, R. Noonan, and A. Whinston, “Computer assisted school
+bus scheduling,”Journal of Management science, vol. 18, no. 6, 1992
+
+25
+L. Ingolotti, P. Tormos, A. Lova, F. Barber, M. Salido, and M. Abril, A DECISION
+SUPPORT SYSTEM (DSS) FOR THE RAILWAY SCHEDULING PROBLEM.
+[Online]. Available: http://www.dsic.upv.es/grupos/gps/papers/papers/aiai04.pdf
+
+9
+B. Boldon, N. Deo, N. Kumar, C. Basnet, L. Foulds, and M. Igbaria, “Fleet manager: a microcomputer based decision support system for vehicle routing,”Journal
+of Decision Support Systems, vol. 16, no. 3, 1996.
