@@ -1,20 +1,18 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
 \documentclass[12pt, oneside]{report}
+\pagestyle{headings}
 
-\bibliographystyle{plainnat}
+\linespread{1.3}
 
 \usepackage{geometry}
 \geometry{a4paper}
-%\geometry{landscape}
-%\usepackage[parfill]{parskip}
+
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{url}
-\usepackage[authoryear, round]{natbib}
+
 \usepackage[table]{xcolor}
 \usepackage{color, colortbl}
-%\usepackage{hyperref}
+
 \usepackage[acronym]{glossaries}
 \makeglossaries
 
@@ -28,32 +26,17 @@
 \newacronym{is}{IS}{information System}
 \newacronym{gps}{GPS}{Global Positioning System}
 
+\begin{document}
+
 
 \title{
 A Decision Support System
 \\ for Public Transportation
 \\ in Developing Countries
 }
-
 \author{Aftha Jaldin}
-\date{11th of October 2013}
-
-\begin{document}
+\date{\today}
 \maketitle
-
-\pagenumbering{arabic}
-\tableofcontents
-\newpage
-\pagenumbering{arabic}
-
-\listoffigures
-\newpage
-
-\listoftables
-\newpage
-
-%\printglossary[type=\acronymtype] % prints just the list of acronyms
-%\newpage
 
 % begin Abstract
 
@@ -75,22 +58,36 @@ The main issue of a lack of a proper Information System is at the core of all of
 I would like to take this opportunity to thank the following people who have helped me thus far in my final year research project.
 \begin{itemize}
 \item Dr. Shiromi Arunatilake, for acting as my supervisor, overseeing my work and giving her valuable input into the thinking process of the project.
-\item Dr. Jeewani Goonathilake, for providing her assistance whenever possible in her capacity as the Course Coordinator for the ICT Research Projects.
-\item Mr. Pradeep Fernando, the Head of the GPS Tracking and Monitoring Unit of the National Transport Commission for providing assistance in gathering information on the GPS tracking system which has been deployed on inter-provincial NTC buses.
-\item Mr. Dhanushka of the GPS Tracking and Monitoring Unit of the National Transport Commission for providing information regarding the existing tracking system.
-\item Mr. Muditha Navaratne from the Timetable Unit of the National Transport Commission.
+\item Dr. Jeewani Goonathilake, for providing her assistance whenever possible in her capacity as the Course Coordinator for the \acrshort{ict} Research Projects.
+\item Mr. Pradeep Fernando, the Head of the \acrshort{gps} Tracking and Monitoring Unit of the \acrshort{ntc} for providing assistance in gathering information on the \acrshort{gps} tracking system which has been deployed on inter-provincial \acrshort{ntc} buses.
+\item Mr. Dhanushka of the \acrshort{gps} Tracking and Monitoring Unit of the \acrshort{ntc} for providing information regarding the existing tracking system.
+\item Mr. Muditha Navaratne from the Timetable Unit of the \acrshort{ntc}.
 \item Dr. Chaminda Ranasinghe, Chief Executive Officer at IdeaHub (Pvt.) Ltd for providing his valuable insights.
 \item Mr. K.A.R.A. Ranjith, the Operations Manager of the Western Province Passenger Transport Authority in providing information regarding the private bus service in the province.
 \item Prof. Amal Kumarage, a Senior Lecturer of the Department of Transport and Logistics Management at the University of Moratuwa.
 \item Mr. Janaka Weerawardana, doctoral student at the University of Moratuwa, Department of Transport and Logistics Management.
 \item Mr. Anuradha Piyadasa, a Consultant and an Academic in the field of Public Transportation and Management.
-\item Mr. Mahesh Nishan, Scheduling Officer at the Western Province Road Passenger Transport Authority.
-\item Mr. Theja Athukorala, Scheduling Officer at the Western Province Road Passenger Transport Authority.
+\item Mr. Mahesh Nishan, Scheduling Officer at the \acrshort{wp} \acrshort{rpta}.
+\item Mr. Theja Athukorala, Scheduling Officer at the \acrshort{wp} \acrshort{rpta}.
 \item To all the people who participated in the User Survey and helped me in my research.
 \item and last, but certainly not least, my Parents for supporting me throughout the course of this research project.
 \end{itemize}
 
+\newpage
 
+\pagenumbering{arabic}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\printglossary % prints just the list of acronyms
+\newpage
 
 % begin Chapter Introduction
 
@@ -121,36 +118,36 @@ The major difference between the system in use in Sri Lanka and other countries 
 \label {image-busTransportSystemStructure}
 \end {figure}
 
-Let us take a look at the statistics involved with the bus service in Sri Lanka. According to the Draft National Policy on Transport in Sri Lanka \citep{MinistryofTransport2008}, public transport accounts for nearly 73\% of the total motorized passenger transport in the country. It also serves as the only means of transport for the majority of the population.
+Let us take a look at the statistics involved with the bus service in Sri Lanka. According to the Draft National Policy on Transport in Sri Lanka \cite{MinistryofTransport2008}, public transport accounts for nearly 73\% of the total motorized passenger transport in the country. It also serves as the only means of transport for the majority of the population.
 
-Of this, bus transportation accounts for nearly 68\% (a 93\% share in the public transport sphere), while rail transport accounts for the remaining 5\% (a 7\% share in the public transport sphere) \citep{MinistryofTransport2008}.
+Of this, bus transportation accounts for nearly 68\% (a 93\% share in the public transport sphere), while rail transport accounts for the remaining 5\% (a 7\% share in the public transport sphere) \cite{MinistryofTransport2008}.
 
 Within the bus transportation system, state-run bus services account for a 23\% share (about one-third of the share of bus transport) while private operators have a share of 45\% (a two-thirds share) provided by small-scale operators.
 
 \begin {figure} [h!]
 \centering
 \includegraphics [scale=0.6] {totalMotorTransportPieChart}
-\caption [Total Motorized Passenger Transport in SL] {Detailed View of Total Motorized Passenger Transport in Sri Lanka. Source: \citep{MinistryofTransport2008}}
+\caption [Total Motorized Passenger Transport in SL] {Detailed View of Total Motorized Passenger Transport in Sri Lanka. Source: \cite{MinistryofTransport2008}}
 \label {image-totalMotorTransportPieChart}
 \end {figure}
 
-Taking a look at the state-run bus service, data obtained from the Sri Lanka Transport Board show that approximately 2.5 million passengers island wide commute daily on close to 4500 SLTB buses \citep{SriLankaTransportBoard2010}. These buses travel an average of 2000km a day \citep{SriLankaTransportBoard2012}. 
+Taking a look at the state-run bus service, data obtained from the Sri Lanka Transport Board show that approximately 2.5 million passengers island wide commute daily on close to 4500 SLTB buses \cite{SriLankaTransportBoard2010}. These buses travel an average of 2000km a day \cite{SriLankaTransportBoard2012}. 
 
-Considering the buses operated by private bus operators, it is estimated that 10 million commuters travel daily on approximately 18,000 private buses currently in use in the country \citep{Silva2010}. Data gathered from the WP RPTA show that there are around 7000 private buses servicing the Western Province and its’ routes which is close to 450 in number. 
+Considering the buses operated by private bus operators, it is estimated that 10 million commuters travel daily on approximately 18,000 private buses currently in use in the country \cite{Silva2010}. Data gathered from the WP RPTA show that there are around 7000 private buses servicing the Western Province and its’ routes which is close to 450 in number. 
 
-Looking at these statistics, we clearly see that the buses run by the private bus operators are far more in number compared to the state-run buses. It also shows that the majority of the commuters rely on the buses operated by private bus operators. These buses function as small independent operators and what is astounding is the fact that in 30 years of operation, not even a single major private bus operator has emerged. The private bus “cartel” is highly unionized and dictates terms to the commuters as well as the government on a regular basis \citep{AdaDerana2012}. Bus strikes are very common and when they do happen, the commuters are placed in great discomfort \citep{Samarajiva2012}, \citep{ColomboPage2012}.
+Looking at these statistics, we clearly see that the buses run by the private bus operators are far more in number compared to the state-run buses. It also shows that the majority of the commuters rely on the buses operated by private bus operators. These buses function as small independent operators and what is astounding is the fact that in 30 years of operation, not even a single major private bus operator has emerged. The private bus “cartel” is highly unionized and dictates terms to the commuters as well as the government on a regular basis \cite{AdaDerana2012}. Bus strikes are very common and when they do happen, the commuters are placed in great discomfort \cite{Samarajiva2012}, \cite{ColomboPage2012}.
 
-In contrast, the state run bus service has a governing body, the SLTB, but it has been in steady decline since the 1970’s owing to mismanagement and cost overruns \citep{AnswersDotCom2012}. It has now become a money-sucking state entity and continues to waste the tax payer's money with no solution in the horizon \citep{LBO2011}, \citep{Sirimanne2013}. The number of SLTB buses in daily operation is well below the number of private buses and because of this, the state-run bus service is unreliable. Presently, it is but a teardrop in a sea of public transport dominated by the private bus operators. For example, as pointed out previously, there are more private buses in the western province (around 7000) than there are SLTB buses in the entire island (around 4500).Given that the average commuter cannot and does not wait for hours on end till an SLTB bus arrives, they have no other option but to use the private bus service. \citep{Wijayapala2012}, \citep{Azwer2012}
+In contrast, the state run bus service has a governing body, the SLTB, but it has been in steady decline since the 1970’s owing to mismanagement and cost overruns \cite{AnswersDotCom2012}. It has now become a money-sucking state entity and continues to waste the tax payer's money with no solution in the horizon \cite{LBO2011}, \cite{Sirimanne2013}. The number of SLTB buses in daily operation is well below the number of private buses and because of this, the state-run bus service is unreliable. Presently, it is but a teardrop in a sea of public transport dominated by the private bus operators. For example, as pointed out previously, there are more private buses in the western province (around 7000) than there are SLTB buses in the entire island (around 4500).Given that the average commuter cannot and does not wait for hours on end till an SLTB bus arrives, they have no other option but to use the private bus service. \cite{Wijayapala2012}, \cite{Azwer2012}
 
 \subsection{Justification of Research Project}
 
 \paragraph{} As mentioned earlier, the Private Bus service is the largest and most widely used Passenger Transport system not only in the Western Province but also in Sri Lanka. However, commuters are constantly dissatisfied with the service provided and there seems to be no alternative. The railway system has its own problems and inefficiencies and a solution to that demands separate research.
 
-According to World Bank statistics, Sri Lanka’s population currently stands at 20.869 million people \citep{WorldBank2013}. Being the most densely populated, the Western Province has a population of 5.8 million people \citep{DepartmentofCensusandStatistics2012}, which is 27.8\% of the total population. This means that more than a quarter of the people in Sri Lanka live and commute in the Western Province. Therefore, it is clearly evident that an improvement in the level of service is needed seeing as it affects more than a quarter of the country’s population.
+According to World Bank statistics, Sri Lanka’s population currently stands at 20.869 million people \cite{WorldBank2013}. Being the most densely populated, the Western Province has a population of 5.8 million people \cite{DepartmentofCensusandStatistics2012}, which is 27.8\% of the total population. This means that more than a quarter of the people in Sri Lanka live and commute in the Western Province. Therefore, it is clearly evident that an improvement in the level of service is needed seeing as it affects more than a quarter of the country’s population.
 
 As mentioned previously, there are around 7000 private buses servicing the Western Province. To put that into perspective, the SLTB only has a cadre of 4500 buses islandwide. This means that there are more private buses in the Western Province than there are SLTB buses in the entire country. This shows that it is a large transportation system that affects more than a quarter of the population in the country on a daily basis.
 
-Also of importance to note is that the number of complaints related to the Inter-Provincial Private Bus Service has doubled this year compared to last year. Chairman of the NTC is reported as saying that over 40 complaints are received per day and this number is increasing \citep{Wickremasekara2012}, \citep{Range2012}. This means that the current strategy of scheduling buses is clearly not working properly which is leading to increased commuter dissatisfaction and complaints.
+Also of importance to note is that the number of complaints related to the Inter-Provincial Private Bus Service has doubled this year compared to last year. Chairman of the NTC is reported as saying that over 40 complaints are received per day and this number is increasing \cite{Wickremasekara2012}, \cite{Range2012}. This means that the current strategy of scheduling buses is clearly not working properly which is leading to increased commuter dissatisfaction and complaints.
 
 Therefore, research into the private bus passenger transport system is essential. It is a large system that affects a large amount of people on a daily basis and the service needs to improve significantly in order for this country to be more productive, the people to be satisfied and for the country to be more attractive to tourists.
 
@@ -180,7 +177,7 @@ There are several issues that commuters highlight consistently. These are listed
 	\item Operating without a valid driver's license, revenue license, and/or route permit
 	\end {enumerate}
 \end {enumerate}
-References: \citep{Wickremasekara2012, Range2012}, comments by frequent commuters, data gathered through the Pilot Route Survey.
+References: \cite{Wickremasekara2012, Range2012}, comments by frequent commuters, data gathered through the Pilot Route Survey.
 
 \newpage
 
@@ -221,11 +218,11 @@ Up until the mid 2000’s, the bus routes in the Western Province did not have p
 \begin{figure}[h!]
 \centering
 \includegraphics [scale=0.7] {currentBusSchedulingProcess}
-\caption[Current Bus Scheduling Process in SL]{Current Bus Scheduling Process in Sri Lanka. Source: \citep{Piyadasa2005}}
+\caption[Current Bus Scheduling Process in SL]{Current Bus Scheduling Process in Sri Lanka. Source: \cite{Piyadasa2005}}
 \label{image-currentBusSchedulingProcess}
 \end{figure}
 
-This process of bus scheduling is an extension of the process put forth by Dennis Huisman in 2004 \citep{Piyadasa2005}. The first step of the process is to conduct a survey. This identifies the existing passenger demand, the quality of the service the buses provide on a given route, the requirements of the regulatory body and any special characteristics of a given route. 
+This process of bus scheduling is an extension of the process put forth by Dennis Huisman in 2004 \cite{Piyadasa2005}. The first step of the process is to conduct a survey. This identifies the existing passenger demand, the quality of the service the buses provide on a given route, the requirements of the regulatory body and any special characteristics of a given route. 
 
 The surveyors ride the buses at variously chosen days and times (to and from the main terminal), note down the trip times and identify the delays and loitering points of the buses on the given route. They also gauge the passenger demand by noting how crowded the bus gets at different stages of the trip. This is a rough estimate of the demand, as the surveyors do not have access to the exact quantitative data.
 
@@ -237,9 +234,9 @@ Finally, the revised schedule is placed into circulation and used on the bus rou
 
 As the crew of a particular bus only operates that bus, the steps of vehicle scheduling and crew scheduling could be and should be carried out together. This is known as Integrated Vehicle and Crew Scheduling and literature to support this has been mentioned in the Literature Review of this thesis document.
 
-As mentioned previously, until the mid-2000’s the private buses in the Western Province did not have predefined schedules to operate with. The buses were dispatched as soon as they came in to the terminal and the operators did not have predefined working hours and trips to complete for each working day \citep{Piyadasa2005}. However, thanks to research efforts by the University of Moratuwa almost all of the 450+ routes in the Western Province now have working timetables. Despite these timetables being implemented and in operation, they are not being properly adhered to and the quality of the bus service is still well below what is needed.
+As mentioned previously, until the mid-2000’s the private buses in the Western Province did not have predefined schedules to operate with. The buses were dispatched as soon as they came in to the terminal and the operators did not have predefined working hours and trips to complete for each working day \cite{Piyadasa2005}. However, thanks to research efforts by the University of Moratuwa almost all of the 450+ routes in the Western Province now have working timetables. Despite these timetables being implemented and in operation, they are not being properly adhered to and the quality of the bus service is still well below what is needed.
 
-The bus schedules that are currently in operation take into account both the Economic and Financial cost of the service to the country, the commuters and the bus operators and optimizes the dispatching of the buses via optimal headway manipulation \citep{Piyadasa2005}. After doing numerous mathematical calculations, the methodology identifies the optimal average headway for the route. After identifying the headway, the available buses are scheduled to fill up the timetable as optimally as possible.
+The bus schedules that are currently in operation take into account both the Economic and Financial cost of the service to the country, the commuters and the bus operators and optimizes the dispatching of the buses via optimal headway manipulation \cite{Piyadasa2005}. After doing numerous mathematical calculations, the methodology identifies the optimal average headway for the route. After identifying the headway, the available buses are scheduled to fill up the timetable as optimally as possible.
 
 A software system was developed to be used to calculate the headways. Ironically however, the system is not being used by the WP RPTA to which it was developed. Instead they use a manual method of determining headway. The NTC however, uses the system to schedule the inter-provincial bus system (data gathered through interviews with Mr. Anuradha Piyadasa, the researcher and developer of the software system).
 
@@ -263,7 +260,7 @@ Decision Support Systems are defined as a set of related computer programs and t
 
 The requirements of the Transportation Service are such that it suits the offering that DSSs provide. A mechanism that aids the Schedulers in their timetabling process workflow while providing Commuters with the necessary information about the Transportation Service that helps them arrive at an informed decision is exactly what is required. Furthermore, the system's requirements go beyond a simple Management Information System or a Standalone software solution. 
 
-According to \citep{Fedra2000}, in a real-world scenario, a typical decision-making process involves the following characteristics,
+According to \cite{Fedra2000}, in a real-world scenario, a typical decision-making process involves the following characteristics,
 
 \begin {itemize}
 \item Multiple actors
@@ -273,7 +270,7 @@ According to \citep{Fedra2000}, in a real-world scenario, a typical decision-mak
 \item Hidden agenda
 \end {itemize}
 
-These are consequently exactly what is prevalent in the current Transportation Service in Sri Lanka. \citep{Fedra2000} also presents the following components as included in a general DSS architecture.
+These are consequently exactly what is prevalent in the current Transportation Service in Sri Lanka. \cite{Fedra2000} also presents the following components as included in a general DSS architecture.
 
 \begin {itemize}
 \item Information resources
@@ -331,12 +328,12 @@ Finally in Chapter~\ref{chapter-ConclusionAndFutureWork}, the conclusions of thi
 
 \section{Planning Process of Public Transportation}
 
-\paragraph{ } The planning and scheduling process of a public transport company generally comprises of 4 main steps, which are \textit{timetabling}, \textit{vehicle scheduling}, \textit{crew scheduling}, and \textit{crew rostering}. The transport mode could be a bus, tram, metro, train or airline. Figure~\ref{image-genericSchedulingProcess} illustrates the flow of the traditional scheduling process. It is carried out as is or the crew scheduling is carried out prior to the vehicle scheduling in certain instances. However, in recent times, the industry has begun adopting an integrated approach of carrying out the vehicle and crew scheduling together. This is also discussed later in the chapter \citep{Huisman2004}.
+\paragraph{ } The planning and scheduling process of a public transport company generally comprises of 4 main steps, which are \textit{timetabling}, \textit{vehicle scheduling}, \textit{crew scheduling}, and \textit{crew rostering}. The transport mode could be a bus, tram, metro, train or airline. Figure~\ref{image-genericSchedulingProcess} illustrates the flow of the traditional scheduling process. It is carried out as is or the crew scheduling is carried out prior to the vehicle scheduling in certain instances. However, in recent times, the industry has begun adopting an integrated approach of carrying out the vehicle and crew scheduling together. This is also discussed later in the chapter \cite{Huisman2004}.
 
 \begin {figure} [h!]
 \centering
 \includegraphics {genericSchedulingProcess}
-\caption [Scheduling Process of a Public Transport Company] {Scheduling Process of a Public Transport Company. Source: \citep{Huisman2004}}
+\caption [Scheduling Process of a Public Transport Company] {Scheduling Process of a Public Transport Company. Source: \cite{Huisman2004}}
 \label {image-genericSchedulingProcess}
 \end {figure}
 
@@ -346,39 +343,39 @@ The second planning process is vehicle scheduling which consists of assigning ve
 
 \subsection{Timetabling}
 
-\paragraph{ } Timetabling is the process of determining how frequently buses must operate on routes based on passenger demand and the operational plan of the respective authority and generating corresponding start and end locations and times of trips, based on these frequencies. Furthermore travel times between various points in routes, lengths of routes are assumed to be known \citep{Huisman2004}.
+\paragraph{ } Timetabling is the process of determining how frequently buses must operate on routes based on passenger demand and the operational plan of the respective authority and generating corresponding start and end locations and times of trips, based on these frequencies. Furthermore travel times between various points in routes, lengths of routes are assumed to be known \cite{Huisman2004}.
 
 The main consideration in the process of timetabling is the output of headways, or the time between consecutive buses. Currently, average optimal headways are calculated in Sri Lanka and used in the scheduling process. An explanation of this process has been given in the previous chapter.
 
-Let us take a look at previous research done into this area. \citet{Newell1971} provides the basic dispatching policy for a transportation route. This work has been the basis for many future work including \citet{Kumarage2007} research paper on formulating an optimal bus dispatching policy under variable demand over time and route length as is the case in Sri Lanka. The paper considered a method that was an extension to \citet{Newell1971}'s Optimal Dispatching Policy to determine a fleet size and dispatching rate based on both the operator's cost and user's cost including the disutility of standing, in order to arrive at a global cost optimum.
+Let us take a look at previous research done into this area. \cite{Newell1971} provides the basic dispatching policy for a transportation route. This work has been the basis for many future work including \cite{Kumarage2007} research paper on formulating an optimal bus dispatching policy under variable demand over time and route length as is the case in Sri Lanka. The paper considered a method that was an extension to \cite{Newell1971}'s Optimal Dispatching Policy to determine a fleet size and dispatching rate based on both the operator's cost and user's cost including the disutility of standing, in order to arrive at a global cost optimum.
 
-\citet{Riano2004} propose a stochastic model for Bus Dispatching that uses a linear programming model so that it is solvable easily and can be used for other modes of mass transit as well. A feature of this model is that it should be applied to modes of mass transit where the frequency is high enough so that users do not need to know the
+\cite{Riano2004} propose a stochastic model for Bus Dispatching that uses a linear programming model so that it is solvable easily and can be used for other modes of mass transit as well. A feature of this model is that it should be applied to modes of mass transit where the frequency is high enough so that users do not need to know the
 schedule in advance (such as the one in Sri Lanka) The solution technique is based on a novel Transient Little Law.
 
-Alternatively, \citet{Daganzo2008} describes an adaptive control scheme to mitigate the problem Bus Bunching in a Public Bus Transport system. This is a problem closely related to timetabling and scheduling and thus has been included in this Literature Review. Bus schedules cannot be easily maintained on busy lines with short headways. Experience shows that buses offering this type of service usually arrive irregularly at their stops, often in bunches. Although authorities build slack into their schedules to alleviate this problem, if necessary holding buses at control points to stay on schedule, their attempts often fail because practical amounts of slack cannot prevent large localized disruptions from spreading system-wide. 
+Alternatively, \cite{Daganzo2008} describes an adaptive control scheme to mitigate the problem Bus Bunching in a Public Bus Transport system. This is a problem closely related to timetabling and scheduling and thus has been included in this Literature Review. Bus schedules cannot be easily maintained on busy lines with short headways. Experience shows that buses offering this type of service usually arrive irregularly at their stops, often in bunches. Although authorities build slack into their schedules to alleviate this problem, if necessary holding buses at control points to stay on schedule, their attempts often fail because practical amounts of slack cannot prevent large localized disruptions from spreading system-wide. 
 
 The proposed scheme dynamically determines bus holding times at a route’s control points based on real-time headway information. The method requires less slack than the conventional, schedule-based approach to produce headways within a given tolerance. This allows buses to travel faster, reducing in-vehicle passenger delay and increasing bus productivity. One disadvantage of this method when thinking in terms of a Sri Lankan context is that it requires real-time information which cannot be obtained currently in the Bus Transport System in Colombo.
 
-\citet{Xuan2011} look at the timetabling problem and its effect on schedule reliability a little differently. They study several Dynamic Holding Strategies that use the current state of all buses, as well as a virtual schedule. The virtual schedule is introduced whether the system is run with a 
+\cite{Xuan2011} look at the timetabling problem and its effect on schedule reliability a little differently. They study several Dynamic Holding Strategies that use the current state of all buses, as well as a virtual schedule. The virtual schedule is introduced whether the system is run with a 
 published schedule or not. Through their research, it was found that through a dynamic holding strategy buses can both closely adhere to schedule and maintain regular headways without too much slack. This in turn improves Schedule Reliability and Commercial Speed of the buses.
 
-\citet{Ceder2009} in his paper, put forth a methodology framework with developed algorithms for the derivation of vehicle departure times (timetable) with either even headways or even average passenger loads. The latter would be ideal for a situation like in Sri Lanka where overcrowding is a major complaint among the commuters.
+\cite{Ceder2009} in his paper, put forth a methodology framework with developed algorithms for the derivation of vehicle departure times (timetable) with either even headways or even average passenger loads. The latter would be ideal for a situation like in Sri Lanka where overcrowding is a major complaint among the commuters.
 
-\citet{Qian2013}, in their paper studied the Optimizing Mathematical Model of Bus Departure Interval and its Solution, and then worked out the best Bus Departure Interval (i.e.: the Headway). They established the optimizing mathematical model of bus departure interval, which took crowding cost of passengers into account, including passengers’ on-the-bus time cost, passengers’ crowding cost and bus company cost. The paper used a genetic algorithm to solve the problem. Reasonable bus departure intervals were obtained quickly by this method.
+\cite{Qian2013}, in their paper studied the Optimizing Mathematical Model of Bus Departure Interval and its Solution, and then worked out the best Bus Departure Interval (i.e.: the Headway). They established the optimizing mathematical model of bus departure interval, which took crowding cost of passengers into account, including passengers’ on-the-bus time cost, passengers’ crowding cost and bus company cost. The paper used a genetic algorithm to solve the problem. Reasonable bus departure intervals were obtained quickly by this method.
 
-Furthermore, \citet{Fu2003} presented a new transit operating strategy in which service vehicles operate in pairs with the lead vehicle providing an all-stop local service and the following vehicle being allowed to skip some stops as an express service to address the bus dispatching and timetabling problem. The underlying scheduling problem is formulated as a nonlinear integer programming problem with the objective of minimizing the total costs for both operators and passengers. This could possibly be adapted into the Sri Lankan context as a viable alternative to the current scheduling methodology.
+Furthermore, \cite{Fu2003} presented a new transit operating strategy in which service vehicles operate in pairs with the lead vehicle providing an all-stop local service and the following vehicle being allowed to skip some stops as an express service to address the bus dispatching and timetabling problem. The underlying scheduling problem is formulated as a nonlinear integer programming problem with the objective of minimizing the total costs for both operators and passengers. This could possibly be adapted into the Sri Lankan context as a viable alternative to the current scheduling methodology.
 
-Finally, \citet{Sun2008} studied the headway optimization and scheduling combination of Bus Rapid Transit (BRT) vehicles. A model was proposed to minimize passengers' travel costs and vehicles' operation cost, and constraints included passenger volume, time, and frequency. The scheduling combination was composed by Normal, Zone, and Express scheduling. The model was solved by a genetic algorithm of variable-length coding. The result of the numerical case showed that the optimization results can save 69.92\% of the cost. A sensitivity analysis that was carried out showed that, under higher traffic volume or lower speed, the travel cost can be reduced through reasonable scheduling combination. The method was, therefore, proven scientifically and is feasible. A similar scheduling method of using Normal, Zone and Express Scheduling could possibly be implemented in Sri Lanka.
+Finally, \cite{Sun2008} studied the headway optimization and scheduling combination of Bus Rapid Transit (BRT) vehicles. A model was proposed to minimize passengers' travel costs and vehicles' operation cost, and constraints included passenger volume, time, and frequency. The scheduling combination was composed by Normal, Zone, and Express scheduling. The model was solved by a genetic algorithm of variable-length coding. The result of the numerical case showed that the optimization results can save 69.92\% of the cost. A sensitivity analysis that was carried out showed that, under higher traffic volume or lower speed, the travel cost can be reduced through reasonable scheduling combination. The method was, therefore, proven scientifically and is feasible. A similar scheduling method of using Normal, Zone and Express Scheduling could possibly be implemented in Sri Lanka.
 
 \subsection{Vehicle Scheduling}
 
-\paragraph{ } Vehicle scheduling is defined as the process of assigning vehicles, to a set of predetermined trips, with fixed starting and ending times, while minimizing capital and operational costs. According to \citet{Freling2003}, the main objective of this step in the Scheduling Process is keeping the operational and capital costs of vehicles to a minimum.
+\paragraph{ } Vehicle scheduling is defined as the process of assigning vehicles, to a set of predetermined trips, with fixed starting and ending times, while minimizing capital and operational costs. According to \cite{Freling2003}, the main objective of this step in the Scheduling Process is keeping the operational and capital costs of vehicles to a minimum.
 
-The Vehicle Scheduling problem can be thought of through two perspectives. They are the Single-Depot Vehicle Scheduling Problem (SDVSP) and the Multiple-Depot Vehicle Scheduling Problem (MDVSP). As noticeable by their names, the difference is the number of depots that each Vehicle is assigned to. In the former, a given vehicle is assigned to a single depot while the latter situation assumes that a given vehicle is assigned to multiple depots. The SDVSP further assumes that all vehicles are identical and there are no time constraints \citep{Huisman2004}. Of these 2 approaches, only the SDVSP applies to the Sri Lankan context as each bus (and its crew) is issued a permit to ply on one route. Therefore, \citet{Freling2003} defines the Single-Depot Vehicle Scheduling Problem as follows.
+The Vehicle Scheduling problem can be thought of through two perspectives. They are the Single-Depot Vehicle Scheduling Problem (SDVSP) and the Multiple-Depot Vehicle Scheduling Problem (MDVSP). As noticeable by their names, the difference is the number of depots that each Vehicle is assigned to. In the former, a given vehicle is assigned to a single depot while the latter situation assumes that a given vehicle is assigned to multiple depots. The SDVSP further assumes that all vehicles are identical and there are no time constraints \cite{Huisman2004}. Of these 2 approaches, only the SDVSP applies to the Sri Lankan context as each bus (and its crew) is issued a permit to ply on one route. Therefore, \cite{Freling2003} defines the Single-Depot Vehicle Scheduling Problem as follows.
 
 “Given a depot at location \textit{d} and \textit{n} trips from locations \textit{b}$_i$ to \textit{e}$_i$, with corresponding fixed times \textit{bt}$_i$ and \textit{et}$_i$ (\textit{i}=1,...,\textit{n}),  and  given  the  travelling  times  between  all  pairs (\textit{d}, \textit{b}$_i$), (\textit{b}$_i$, \textit{e}$_i$), (\textit{e}$_i$, \textit{b}$_j$) and (\textit{e}$_i$, \textit{d}), find a feasible \textit{minimum cost} schedule for the vehicles, such that all trips are covered by a vehicle. Each trip has to be entirely serviced by one vehicle and trips serviced by the same vehicle are linked by \textit{deadheading trips} (\textit{dh}-trips).  These are trips without serving passengers (pairs (\textit{d}, \textit{b}$_i$), (\textit{e}$_i$, \textit{b}$_j$) and (\textit{e}$_i$, \textit{d})), consisting of travel time (vehicle deadheading) and/or \textit{idle time} (vehicle waiting time). A schedule for a vehicle is composed of vehicle \textit{blocks}, where each block is a departure from the depot, the service of a sequence of trips and the return to the depot. The cost function is a combination of vehicle capital (fixed) and/or operational (variable) cost. The capital cost is often such that the number of vehicles will be minimized, while the operational cost is often a combination of vehicle travel and idle time”.
 
-In the Multiple-Depot Vehicle Scheduling Problem (MDVSP), buses are dispatched from several depots and total vehicles costs have to be minimized subject to the following constraints \citep{Huisman2004}
+In the Multiple-Depot Vehicle Scheduling Problem (MDVSP), buses are dispatched from several depots and total vehicles costs have to be minimized subject to the following constraints \cite{Huisman2004}
 
 \begin {itemize}
 \item Every vehicle is associated with a single depot; 
@@ -390,19 +387,19 @@ In the Multiple-Depot Vehicle Scheduling Problem (MDVSP), buses are dispatched f
 
 \paragraph{ } The next step in the traditional scheduling process is the Crew Scheduling.  The problem is defined as follows: “The Crew Scheduling Problem (CSP) deals with assigning tasks to duties such that each task is performed; each duty is feasible with respect to a set of working rules and the total costs of the duties are minimized”. 
 
-According to \citep{Huisman2004}, the only requirement with relation to the feasibility of a duty is its length or the working time in that duty, respectively. In most literature, the CSP is formulated as a set partitioning or covering problem and solved with a column generation approach.
+According to \cite{Huisman2004}, the only requirement with relation to the feasibility of a duty is its length or the working time in that duty, respectively. In most literature, the CSP is formulated as a set partitioning or covering problem and solved with a column generation approach.
 
 \subsection {Integrated Vehicle and Crew Scheduling}
 
 \paragraph{ } As mentioned previously in this chapter, the industry has begun using Integrated Vehicle and Crew Scheduling in recent times. This is due to logical as well as financial reasons. The airline industry uses this methodology as a crew has to be scheduled along with an airline trip for obvious reasons.
 
-The Integrated Vehicle and Crew Scheduling Problem (Integrated VCSP or IVCSP) is analyzed by \citet{Huisman2004}. Accordingly, the Integrated Vehicle and Crew Scheduling Problem is defined as follows. “Given a set of service requirements or trips within a fixed planning horizon, find a minimum cost schedule for the vehicles and the crews, such that both the vehicle and the crew schedules are feasible and mutually compatible. Each trip has fixed starting and ending times, and the travelling times between all pairs of locations are known. A vehicle schedule is feasible if (1) each trip is assigned to a vehicle, and (2) each vehicle performs a feasible sequence of trips, where a sequence of trips is feasible if it is feasible for a vehicle to execute each pair of consecutive trips in the sequence”.
+The Integrated Vehicle and Crew Scheduling Problem (Integrated VCSP or IVCSP) is analyzed by \cite{Huisman2004}. Accordingly, the Integrated Vehicle and Crew Scheduling Problem is defined as follows. “Given a set of service requirements or trips within a fixed planning horizon, find a minimum cost schedule for the vehicles and the crews, such that both the vehicle and the crew schedules are feasible and mutually compatible. Each trip has fixed starting and ending times, and the travelling times between all pairs of locations are known. A vehicle schedule is feasible if (1) each trip is assigned to a vehicle, and (2) each vehicle performs a feasible sequence of trips, where a sequence of trips is feasible if it is feasible for a vehicle to execute each pair of consecutive trips in the sequence”.
 
-The author provides a very comprehensive look into the problem and presents a methodology to solve integrations of both the SDVSP and the MDVSP. The Integrated VCSP is also discussed by \citet{Freling2000} and \citet{Wren1997}.
+The author provides a very comprehensive look into the problem and presents a methodology to solve integrations of both the SDVSP and the MDVSP. The Integrated VCSP is also discussed by \cite{Freling2000} and \cite{Wren1997}.
 
 \subsection {Crew Rostering}
 
-The Crew Rostering Problem (CRP) aims at determining an optimal sequencing of a given set of duties into rosters satisfying operational constraints deriving from union contracts and company regulations. In the public bus transport industry, the roster is used to evenly distribute the workload among the crew \citep{Caprara1995}. Further studies were done by \citep{Kharraziha2003} and \citep{Tian2012}. The Integrated Crew Rostering Problem was examined in depth by \citep{Valdes2010} and \citep{Xie2012}.
+The Crew Rostering Problem (CRP) aims at determining an optimal sequencing of a given set of duties into rosters satisfying operational constraints deriving from union contracts and company regulations. In the public bus transport industry, the roster is used to evenly distribute the workload among the crew \cite{Caprara1995}. Further studies were done by \cite{Kharraziha2003} and \cite{Tian2012}. The Integrated Crew Rostering Problem was examined in depth by \cite{Valdes2010} and \cite{Xie2012}.
 
 This literature review looked at the different steps involved in the bus scheduling process. It also reviewed the literature related to each step. This literature is what will act as reference material as we attempt to present a new model of scheduling buses. The next chapter will detail the research methodology and the proposed model for scheduling buses in the Western Province.
 
@@ -411,15 +408,15 @@ This literature review looked at the different steps involved in the bus schedul
 \section{Decision Support Systems}
 \label {section-DSS}
 
-\paragraph{ } Decision Support Systems are defined as a set of related computer programs and the data required to assist with analysis and decision-making within an organization. They are purposely developed to improve decision making of non-structured management problems. Decision Support Systems utilize data, provide an easy-to-use interface, and allow for the decision maker’s own insights hence being interactive, flexible, and adaptable computer-based information systems \citep{Turban2005}. 
+\paragraph{ } Decision Support Systems are defined as a set of related computer programs and the data required to assist with analysis and decision-making within an organization. They are purposely developed to improve decision making of non-structured management problems. Decision Support Systems utilize data, provide an easy-to-use interface, and allow for the decision maker’s own insights hence being interactive, flexible, and adaptable computer-based information systems \cite{Turban2005}. 
 
-Having said that, the term DSS in itself is difficult to define with academics and users differing in their opinion in terms of its preferred use. While academics have perceived DSS as a tool to support the decision making process, DSS users see DSS as a tool to facilitate organizational processes \citep{Keen1980}.
+Having said that, the term DSS in itself is difficult to define with academics and users differing in their opinion in terms of its preferred use. While academics have perceived DSS as a tool to support the decision making process, DSS users see DSS as a tool to facilitate organizational processes \cite{Keen1980}.
 
 \subsection{History of Decision Support Systems}
 
-\paragraph{ } The concept of a Decision Support System has been around since the 1950's but only recently has it increased in popularity and adoption in the industry. With the improvement in technology, the research into DSS's has also increased. The abstract concept of a system that aids in the decision-making process has its roots in the late 1950's and early 1960's through research done at the Carnegie Institute of Technology. This later grew into information systems research through work done at the Massachusettes Institute of Technology in the 1960's. DSS's started to become a research topic of its own in the mid-1970's with more and more research following through the mid to late 1980's \citep{Keen1980, Power2003}.
+\paragraph{ } The concept of a Decision Support System has been around since the 1950's but only recently has it increased in popularity and adoption in the industry. With the improvement in technology, the research into DSS's has also increased. The abstract concept of a system that aids in the decision-making process has its roots in the late 1950's and early 1960's through research done at the Carnegie Institute of Technology. This later grew into information systems research through work done at the Massachusettes Institute of Technology in the 1960's. DSS's started to become a research topic of its own in the mid-1970's with more and more research following through the mid to late 1980's \cite{Keen1980, Power2003}.
 
-\citep{Power2003} lists 5 main categories of DSS's which are,
+\cite{Power2003} lists 5 main categories of DSS's which are,
 
 \begin {itemize}
 \item \textbf{Communication-driven DSS} is a type of DSS that emphasizes communications, collaboration and shared decision-making support. A simple bulletin board or threaded email is the most elementary level of functionality. The comp.groupware FAQ defines groupware as "software and hardware for shared interactive environments" intended to support and augment group activity. Groupware is a subset of a broader concept called Collaborative Computing. Communications-Driven DSS enable two or more people to communicate with each other, share information and co-ordinate their activities. Group Decision Support Systems or GDSS is a hybrid type of DSS that allows multiple users to work collaboratively in groupwork using various software tools. Examples of group support tools are: audio conferencing, bulletin boards and web-conferencing, document sharing, electronic mail, computer supported face-to-face meeting software, and interactive video.; 
@@ -429,7 +426,7 @@ Having said that, the term DSS in itself is difficult to define with academics a
 \item \textbf{Model-driven DSS} emphasize access to and manipulation of a model, for example, statistical, financial, optimization and/or simulation models. Simple statistical and analytical tools provide the most elementary level of functionality. Some OLAP systems that allow complex analysis of data may be classified as hybrid DSS systems providing both modeling and data retrieval and data summarization functionality. In general, model-driven DSS use complex financial, simulation, optimization or multi-criteria models to provide decision support. Model-driven DSS use data and parameters provided by decision makers to aid decision makers in analyzing a situation, but they are not usually data intensive, which means very large databases are usually not needed for a model-driven DSS.;
 \end {itemize}
 
-\citep{Power2003} also identifies 4 main characteristics of DSS's namely,
+\cite{Power2003} also identifies 4 main characteristics of DSS's namely,
 
 \begin {enumerate}
 \item Inputs - these are what is used by the DSS analysis.;
@@ -444,11 +441,11 @@ Having said that, the term DSS in itself is difficult to define with academics a
 
 \paragraph{} So far in this chapter, we took a look at the literature related to the planning process of a public transportation company. We also reviewed some literature behind Decision Support Systems. Next we'll take a look at some Transportation Information Systems of cities in other Developing Countries.
 
-During this research, data regarding information systems related to transportation services of 4 Indian cities, namely Bangalore, Mumbai, Delhi and Chennai, as well as the transportation services in Uganda (mainly Kampala) and the public bus transport service of Buenos Aires in Argentina was uncovered. Sri Lanka, India, Argentina and Uganda are all listed as Developing Countries according to the latest International Statistical Institute data \citep{ISI2013}.
+During this research, data regarding information systems related to transportation services of 4 Indian cities, namely Bangalore, Mumbai, Delhi and Chennai, as well as the transportation services in Uganda (mainly Kampala) and the public bus transport service of Buenos Aires in Argentina was uncovered. Sri Lanka, India, Argentina and Uganda are all listed as Developing Countries according to the latest International Statistical Institute data \cite{ISI2013}.
 
-Of the 4 Indian cities under consideration, Bangalore, Mumbai and Delhi had more modern Information Systems for their transport services. The Chennai system looked outdated and lacked proper maintenance. Common functionality that these 4 systems related to the indian cities provided was a Bus Route Finder (i.e.: when origin and destination stops are provided, the system provides the possible routes), Information Portal regarding Bus Routes and Bus Stops and information regarding hiring/renting a bus for private journeys. Furthermore, only the Bangalore and Chennai systems offered the functionality of commuter feedback \citep{BMTC1997, BEST1995, DTC2012, MTC2001}.
+Of the 4 Indian cities under consideration, Bangalore, Mumbai and Delhi had more modern Information Systems for their transport services. The Chennai system looked outdated and lacked proper maintenance. Common functionality that these 4 systems related to the indian cities provided was a Bus Route Finder (i.e.: when origin and destination stops are provided, the system provides the possible routes), Information Portal regarding Bus Routes and Bus Stops and information regarding hiring/renting a bus for private journeys. Furthermore, only the Bangalore and Chennai systems offered the functionality of commuter feedback \cite{BMTC1997, BEST1995, DTC2012, MTC2001}.
 
-In Argentina, the public bus transport system is known as the "Colectivos" and although there is no proper information system for the bus service, private travel organizations have information portals regarding the service. One such portal is that which is run by Omnilineas, a licensed travel agency in Buenos Aires with a special focus on incoming tourism and bus travel. Their system provides Bus Route Information as well as information regarding booking tickets for long-distance trips \citep{Omnilineas2013}.
+In Argentina, the public bus transport system is known as the "Colectivos" and although there is no proper information system for the bus service, private travel organizations have information portals regarding the service. One such portal is that which is run by Omnilineas, a licensed travel agency in Buenos Aires with a special focus on incoming tourism and bus travel. Their system provides Bus Route Information as well as information regarding booking tickets for long-distance trips \cite{Omnilineas2013}.
 
 \newpage
 
@@ -490,7 +487,7 @@ The data was gathered in this manual way because there is no automated data gath
 
 Furthermore, a route survey is only done when there is a significant change needed to the timetable; otherwise the timetable is a fixed entity. This is a very reactive stance to the situation which is the incorrect policy to adopt as passenger demands vary and the service and the timetable needs to adjust accordingly. At present however, once the timetable is formulated and signed off by the higher authorities, it is not changed unless a significant number of people complain about. The service and timetable needs to be more proactive in order to offer a better service to the public (Source: Interviews with the WP RPTA and the NTC personnel).
 
-An ideal Automatic Data Collection System (ADCS) would include provisions for Automatic Vehicle Location (AVL) data, Automatic Passenger Count (APC) data as well as the integration of an Automatic Fare Collection (AFC) System. Please refer to Figure~\ref{image-ADCS}. This would allow the schedulers to formulate much more accurate timetables taking into account the Passenger Demands (Load Factors) of the various buses at the various stops during various times of day. An Origin-Destination Matrix could also be obtained by analyzing this data to determine which segments of routes are most frequently used and therefore are more likely to be congested \citep{Wilson2008}.
+An ideal Automatic Data Collection System (ADCS) would include provisions for Automatic Vehicle Location (AVL) data, Automatic Passenger Count (APC) data as well as the integration of an Automatic Fare Collection (AFC) System. Please refer to Figure~\ref{image-ADCS}. This would allow the schedulers to formulate much more accurate timetables taking into account the Passenger Demands (Load Factors) of the various buses at the various stops during various times of day. An Origin-Destination Matrix could also be obtained by analyzing this data to determine which segments of routes are most frequently used and therefore are more likely to be congested \cite{Wilson2008}.
 
 \begin {figure} [h!]
 \centering
@@ -503,7 +500,7 @@ An implementation of an Automatic Data Collection System (ADCS) could ultimately
 
 An ADCS has been proposed in the past but has been shot down and discouraged by the bus owners and operators. The main reason that they give for this is that the system is too costly for them to implement and it brings no additional value to them. This is a misguided notion by the owners and operators as the system could benefit them immensely in the long run. Revenue leakage, which is one of the main grievances given by bus owners, could be curbed through an implementation of an Automatic Fare Collection (AFC) System. Furthermore, it would bring about a sense of accountability and transparency in the payment of fares of private buses. It would be a cost in the short-term, but considering the long-term benefits, the owners/operators should consider it an investment to make the system and service future-proof.
 
-Furthermore, an Automatic Vehicle Location (AVL) system would allow commuters to know exactly where and when the next bus will be arriving providing more information and flexibility. Automatic Passenger Counting (APC) would give the schedulers enough information to ensure that timetables are working correctly and buses are dispatched to account for higher or lower passenger demand. The schedulers could also audit their timetables more frequently to ensure that schedules are kept current. It would also allow route monitors to ascertain if the owners/operators are overcrowding the buses causing discomfort to passengers. An Automatic Fare Collection (AFC) system would also bring great comfort to commuters who consistently complain about being overcharged or not receiving the proper balance money back from the conductor. An AFC would also greatly benefit the owners/operators because they could monitor and audit their income correctly and put paid to the revenue leakage that occurs consistently (according to the owners) \citep{Wilson2008, Wilson2009, Wilson2012, Fijalkowski2010}.
+Furthermore, an Automatic Vehicle Location (AVL) system would allow commuters to know exactly where and when the next bus will be arriving providing more information and flexibility. Automatic Passenger Counting (APC) would give the schedulers enough information to ensure that timetables are working correctly and buses are dispatched to account for higher or lower passenger demand. The schedulers could also audit their timetables more frequently to ensure that schedules are kept current. It would also allow route monitors to ascertain if the owners/operators are overcrowding the buses causing discomfort to passengers. An Automatic Fare Collection (AFC) system would also bring great comfort to commuters who consistently complain about being overcharged or not receiving the proper balance money back from the conductor. An AFC would also greatly benefit the owners/operators because they could monitor and audit their income correctly and put paid to the revenue leakage that occurs consistently (according to the owners) \cite{Wilson2008, Wilson2009, Wilson2012, Fijalkowski2010}.
 
 \subsection{Automatic Data Collection in the Inter-Provincial Service} 
 
@@ -517,19 +514,19 @@ The device costs around 45,000 rupees with the government subsidizing the cost. 
 
 \subsection{Automatic Vehicle Location (AVL)}
 
-\paragraph{ } Vehicle Location data could be obtained through several methods. One of the main and most feasible methods would be to fix a GPS-based tracker on to the bus and monitoring its movement through a mapping software. This method, however, has a fairly large startup cost which has discouraged the stakeholders in the past. Alternatively, this could be achieved by crowdsourcing the Vehicle Location data through a mobile app. Automatic Vehicle Location (AVL) Data is very important as it reflects the current location of a bus and can be used to predict journey times and availability of buses for the commuters. A system could be built that uses AVL data to notify commuters of the current bus, the bus that is due to arrive next etc. This data is also very important in the scheduling stage of transport planning and could be used to formulate more efficient and effective timetables \citep{Wilson2009}.
+\paragraph{ } Vehicle Location data could be obtained through several methods. One of the main and most feasible methods would be to fix a GPS-based tracker on to the bus and monitoring its movement through a mapping software. This method, however, has a fairly large startup cost which has discouraged the stakeholders in the past. Alternatively, this could be achieved by crowdsourcing the Vehicle Location data through a mobile app. Automatic Vehicle Location (AVL) Data is very important as it reflects the current location of a bus and can be used to predict journey times and availability of buses for the commuters. A system could be built that uses AVL data to notify commuters of the current bus, the bus that is due to arrive next etc. This data is also very important in the scheduling stage of transport planning and could be used to formulate more efficient and effective timetables \cite{Wilson2009}.
 
 \subsection{Automatic Passenger Counting (APC)}
 
 \paragraph{ } Automatic Passenger Counting (APC) is important in order to gauge the passenger demand or load factors in the buses. This data could be used to draw up origin-destination matrices in order to identify which segments of routes are most congested and which routes are not very congested at all. This all helps in the planning and dispatching of buses which eventually lead to a better schedule and a better service.
 
-The APC data could be obtained from an Automated Fare Collection (AFC) System such as a contactless smart card payment method. The implementation of both could potentially be very useful for the commuters and owners/operators alike \citep{Wilson2009, Silva2010}.
+The APC data could be obtained from an Automated Fare Collection (AFC) System such as a contactless smart card payment method. The implementation of both could potentially be very useful for the commuters and owners/operators alike \cite{Wilson2009, Silva2010}.
 
 \subsection{Automatic Fare Collection (AFC)}
 
-\paragraph{ } The implementation of an Automatic Fare Collection system has been in the works for some time and discussions with industry experts have revealed that a working system is available. However it is not being implemented as the government still has some regulatory and other issues to sort out first. The system involves a Prepaid Smart Card system where the Smart Card could be used for cashless payment of bus fares. Commuters could also recharge their cards when the stored value in the cards runs low (akin to reloading a prepaid mobile phone). This is just one of the methods that could be used to implement an automated fare collection system \citep{Wilson2009, Silva2010}.
+\paragraph{ } The implementation of an Automatic Fare Collection system has been in the works for some time and discussions with industry experts have revealed that a working system is available. However it is not being implemented as the government still has some regulatory and other issues to sort out first. The system involves a Prepaid Smart Card system where the Smart Card could be used for cashless payment of bus fares. Commuters could also recharge their cards when the stored value in the cards runs low (akin to reloading a prepaid mobile phone). This is just one of the methods that could be used to implement an automated fare collection system \cite{Wilson2009, Silva2010}.
 
-As its popularity grows, NFC or Near-Field Communication has garnered the attention of public transport systems around the world. It allows a user to use everyday devices (such as a mobile phone or an ATM card etc.) as a transaction medium. This could lead to enabling payment of bus fares with a mobile phone which is a very innovative and highly lucrative area to look into. It would bring comfort to passengers and allow owners/operators to receive the payment directly from the commuters. Therefore, the potential market and it's applications is vast. However, Sri Lanka does not have any such systems or parties interested in a system like this which is unfortunate. One could argue that before going to such technologically advanced lengths, the authorities should focus on a smaller system and implement one which is more appropriate to the Sri Lankan context which is a fair argument. The problem is that currently \textit{no system at all} exists, which is not a good situation for the private bus service and the country \citep{Silva2010, Sinha2012}.
+As its popularity grows, NFC or Near-Field Communication has garnered the attention of public transport systems around the world. It allows a user to use everyday devices (such as a mobile phone or an ATM card etc.) as a transaction medium. This could lead to enabling payment of bus fares with a mobile phone which is a very innovative and highly lucrative area to look into. It would bring comfort to passengers and allow owners/operators to receive the payment directly from the commuters. Therefore, the potential market and it's applications is vast. However, Sri Lanka does not have any such systems or parties interested in a system like this which is unfortunate. One could argue that before going to such technologically advanced lengths, the authorities should focus on a smaller system and implement one which is more appropriate to the Sri Lankan context which is a fair argument. The problem is that currently \textit{no system at all} exists, which is not a good situation for the private bus service and the country \cite{Silva2010, Sinha2012}.
 
 As mentioned previously, the NTC has implemented a GPS-based Vehicle Tracking system in the Inter-Provincial Bus Transport Service as an Automated Data Collection System. However, it only collects the Vehicle Location data. The Passenger Counts data is not collected automatically and there is no system in place to do so. However, the Inter-Provincial Bus Service is more developed than the Intra-Provincial Service in the Western Province as the NTC has made it compulsory for Inter-Provincial buses to have Electronic Ticketing Machines (ETM). This means that at least the passenger counts data \textit{is} recorded. The data that is saved in the Ticketing Machines could be accessed later and the data be obtained for scheduling purposes.
 
@@ -673,7 +670,7 @@ Duration of Trip & & 44 mins & \\
 
 \paragraph{} From the contents of the current Chapter, the problems of the current system and transport service are clearly evident. From the Pilot Route Survey that was conducted, the data gathering requirements of the proposed DSS is clear.
 
-Accordingly, possible solutions to these problems were an implementation of a Management Information System or a standalone system to create timetables for the schedulers. However neither of these really addressed all of the issues for all of the stakeholders. Management Information Systems are systems or processes that provide the information necessary to manage an organization effectively \citep{Comptroller1995, TexasAMUni2012}. Although this does accomplish the outcome of better management for the Schedulers, it does little to manage the customer-facing activities. It also focuses on management of the organization instead of aiding in the decision-making process.
+Accordingly, possible solutions to these problems were an implementation of a Management Information System or a standalone system to create timetables for the schedulers. However neither of these really addressed all of the issues for all of the stakeholders. Management Information Systems are systems or processes that provide the information necessary to manage an organization effectively \cite{Comptroller1995, TexasAMUni2012}. Although this does accomplish the outcome of better management for the Schedulers, it does little to manage the customer-facing activities. It also focuses on management of the organization instead of aiding in the decision-making process.
 
 Alternatively, a standalone system to merely create timetables and schedules for the bus routes does not solve all of the problems faced. Therefore, the need for a Decision Support System to aid the various stakeholders in their decision-making processes as well as enabling the proper monitoring and regulation of the service is clearly evident. The definition of a Decision Support System and how it relates to the transportation problem has already been discussed in this document. Therefore, in the next Chapter, we will see what the proposed Decision Support System is. This will include the higher-level system architecture, the system features, the main entities \& their relationships and a few screenshots of the prototype that was built for user testing.
 
@@ -1193,7 +1190,7 @@ The main outcome of this research project was to identify and analyze the proble
 
 \paragraph{} The research of investigating the usage of a DSS in the context of a public transportation system in a developing country was in and of itself a challenge. Furthermore, this research can be extended in breadth to include an Automated Data Gathering Mechanism. The Data Collection framework and infrastructure was not within the scope of this research project. However, in the future, the methods of integrating a system of Automated Data Collection into this concept could be investigated. This includes an Automated Vehicle Location system as well as an Automated Passenger Counting mechanism. it could also investigate the possible options for an Automated Fare Collection framework and infrastructure. Possible options for the last point would be using mobile SMS-based payments and/or using new technologies such as NFC (Near-Field Communication) to implement a Contactless Smart Card system to reduce revenue leakage.
 
-Additionally, the concept of the system presented in this research project could be extended to become an Expert System. An Expert System differs from a Decision Support System in that it not only provides the information to help the decision-making process but also provides several recommendations automatically by analyzing the data and identifying key points in the information. An Expert System is defined as a computer system that emulates the decision-making ability of a human expert. Expert systems are designed to solve complex problems by reasoning about knowledge, like an expert \citep{Jackson1998}.
+Additionally, the concept of the system presented in this research project could be extended to become an Expert System. An Expert System differs from a Decision Support System in that it not only provides the information to help the decision-making process but also provides several recommendations automatically by analyzing the data and identifying key points in the information. An Expert System is defined as a computer system that emulates the decision-making ability of a human expert. Expert systems are designed to solve complex problems by reasoning about knowledge, like an expert \cite{Jackson1998}.
 
 This research project could also be extended by researching the various methods of bus dispatching and providing options for the schedulers to switch between various dispatching methods for each Bus Route or a set of Bus Routes.
 
@@ -1490,5 +1487,9 @@ Duration of Trip & & 26 mins & \\
 \end{table}
 
 
+
+
+\bibliographystyle{plain}
 \bibliography{FYP}
+
 \end{document}  
