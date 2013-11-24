@@ -1,0 +1,23 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adams(1984)]{AWriter}
+Doglas Adams.
+\newblock Latex is great.
+\newblock \emph{Times Magazine}, IV, 1984.
+
+\bibitem[on~animals(1984)]{AnExpert}
+Experts on~animals.
+\newblock Animals and society, Aug 1984.
+\newblock URL \url{http://www.animalsandsociety.org/main/}.
+
+\bibitem[Jigger(1984)]{ATraveler}
+Arsenius Jigger.
+\newblock \emph{Magical Drafts and Potions}.
+\newblock Flourish and Blotts, 1984.
+
+\end{thebibliography}
