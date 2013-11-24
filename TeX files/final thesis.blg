@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: final thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: final thesis.aux
 The style file: plain.bst
 Database file #1: FYP.bib
 Warning--empty booktitle in Caprara1995
@@ -10,4 +12,45 @@ Warning--empty booktitle in Kumarage2007
 Warning--empty booktitle in Valdes2010
 Warning--empty booktitle in Wren1997
 Warning--empty booktitle in Xie2012
+You've used 53 entries,
+            2118 wiz_defined-function locations,
+            747 strings with 10416 characters,
+and the built_in function-call counts, 12145 in all, are:
+= -- 1092
+> -- 532
+< -- 0
++ -- 224
+- -- 164
+* -- 494
+:= -- 2090
+add.period$ -- 158
+call.type$ -- 53
+change.case$ -- 237
+chr.to.int$ -- 0
+cite$ -- 62
+duplicate$ -- 474
+empty$ -- 1156
+format.name$ -- 164
+if$ -- 2564
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 24
+newline$ -- 267
+num.names$ -- 106
+pop$ -- 453
+preamble$ -- 1
+purify$ -- 188
+quote$ -- 0
+skip$ -- 367
+stack$ -- 0
+substring$ -- 272
+swap$ -- 52
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 204
+warning$ -- 9
+while$ -- 106
+width$ -- 55
+write$ -- 524
 (There were 9 warnings)
