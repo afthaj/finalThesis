@@ -3,93 +3,97 @@
 \contentsline {paragraph}{ }{1}
 \contentsline {section}{\numberline {1.1}Background Study: The Case of the \acrshort {wp} \acrshort {rpta}}{3}
 \contentsline {paragraph}{ }{3}
-\contentsline {subsection}{\numberline {1.1.1}Justification of Research Project}{6}
+\contentsline {subsection}{\numberline {1.1.1}Statistics of the Bus Service in Sri Lanka}{4}
+\contentsline {subsection}{\numberline {1.1.2}Justification of Research Project}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {section}{\numberline {1.2}Existing Problems}{7}
 \contentsline {section}{\numberline {1.3}Reasons for the Problems}{9}
 \contentsline {section}{\numberline {1.4}Current Bus Scheduling Process in Sri Lanka}{11}
 \contentsline {paragraph}{ }{11}
-\contentsline {section}{\numberline {1.5}Decision Support Systems: an Introduction}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {section}{\numberline {1.6}Research Goals \& Objectives}{18}
-\contentsline {paragraph}{ }{18}
-\contentsline {section}{\numberline {1.7}Research Scope \& Limitations}{18}
-\contentsline {paragraph}{ }{18}
-\contentsline {section}{\numberline {1.8}Outline of Thesis}{20}
-\contentsline {chapter}{\numberline {2}Literature Review}{21}
-\contentsline {paragraph}{ }{21}
-\contentsline {section}{\numberline {2.1}Planning Process of Public Transportation}{21}
-\contentsline {paragraph}{ }{21}
-\contentsline {subsection}{\numberline {2.1.1}Timetabling}{23}
-\contentsline {paragraph}{ }{23}
-\contentsline {subsection}{\numberline {2.1.2}Vehicle Scheduling}{25}
+\contentsline {section}{\numberline {1.5}Decision Support Systems: an Introduction}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {section}{\numberline {1.6}Research Goals \& Objectives}{17}
+\contentsline {paragraph}{ }{17}
+\contentsline {section}{\numberline {1.7}Research Scope \& Limitations}{17}
+\contentsline {paragraph}{ }{17}
+\contentsline {section}{\numberline {1.8}Outline of Thesis}{19}
+\contentsline {chapter}{\numberline {2}Literature Review}{20}
+\contentsline {paragraph}{ }{20}
+\contentsline {section}{\numberline {2.1}Planning Process of Public Transportation}{20}
+\contentsline {paragraph}{ }{20}
+\contentsline {subsection}{\numberline {2.1.1}Timetabling}{22}
+\contentsline {paragraph}{ }{22}
+\contentsline {subsection}{\numberline {2.1.2}Vehicle Scheduling}{24}
+\contentsline {paragraph}{ }{24}
+\contentsline {subsection}{\numberline {2.1.3}Crew Scheduling}{25}
 \contentsline {paragraph}{ }{25}
-\contentsline {subsection}{\numberline {2.1.3}Crew Scheduling}{26}
+\contentsline {subsection}{\numberline {2.1.4}Integrated Vehicle and Crew Scheduling}{26}
 \contentsline {paragraph}{ }{26}
-\contentsline {subsection}{\numberline {2.1.4}Integrated Vehicle and Crew Scheduling}{27}
-\contentsline {paragraph}{ }{27}
-\contentsline {subsection}{\numberline {2.1.5}Crew Rostering}{27}
-\contentsline {section}{\numberline {2.2}Decision Support Systems}{29}
-\contentsline {paragraph}{ }{29}
-\contentsline {subsection}{\numberline {2.2.1}History of Decision Support Systems}{29}
-\contentsline {paragraph}{ }{29}
-\contentsline {section}{\numberline {2.3}Transportation Information Systems of cities in other Developing Countries}{32}
-\contentsline {paragraph}{}{32}
-\contentsline {chapter}{\numberline {3}Research Methodology}{33}
+\contentsline {subsection}{\numberline {2.1.5}Crew Rostering}{26}
+\contentsline {section}{\numberline {2.2}Loitering of Buses at Bus Stops}{27}
+\contentsline {section}{\numberline {2.3}Automated Data Gathering}{28}
+\contentsline {paragraph}{ }{28}
+\contentsline {subsection}{\numberline {2.3.1}Automatic Data Collection in the Inter-Provincial Service}{30}
+\contentsline {paragraph}{ }{30}
+\contentsline {subsection}{\numberline {2.3.2}Automatic Vehicle Location (AVL)}{31}
+\contentsline {paragraph}{ }{31}
+\contentsline {subsection}{\numberline {2.3.3}Automatic Passenger Counting (APC)}{31}
+\contentsline {paragraph}{ }{31}
+\contentsline {subsection}{\numberline {2.3.4}Automatic Fare Collection (AFC)}{32}
+\contentsline {paragraph}{ }{32}
+\contentsline {section}{\numberline {2.4}Decision Support Systems}{33}
 \contentsline {paragraph}{ }{33}
-\contentsline {section}{\numberline {3.1}Pilot Route Survey}{34}
-\contentsline {paragraph}{ }{34}
-\contentsline {section}{\numberline {3.2}Loitering}{35}
-\contentsline {section}{\numberline {3.3}Automated Data Gathering}{35}
-\contentsline {paragraph}{ }{35}
-\contentsline {subsection}{\numberline {3.3.1}Automatic Data Collection in the Inter-Provincial Service}{38}
+\contentsline {subsection}{\numberline {2.4.1}History of Decision Support Systems}{33}
+\contentsline {paragraph}{ }{33}
+\contentsline {subsection}{\numberline {2.4.2}Categories of Decision Support Systems}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {section}{\numberline {2.5}Transportation Information Systems of cities in other Developing Countries}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {chapter}{\numberline {3}Research Methodology}{37}
+\contentsline {paragraph}{ }{37}
+\contentsline {section}{\numberline {3.1}Pilot Route Survey}{38}
 \contentsline {paragraph}{ }{38}
-\contentsline {subsection}{\numberline {3.3.2}Automatic Vehicle Location (AVL)}{39}
-\contentsline {paragraph}{ }{39}
-\contentsline {subsection}{\numberline {3.3.3}Automatic Passenger Counting (APC)}{39}
-\contentsline {paragraph}{ }{39}
-\contentsline {subsection}{\numberline {3.3.4}Automatic Fare Collection (AFC)}{39}
-\contentsline {paragraph}{ }{39}
-\contentsline {subsection}{\numberline {3.3.5}Gathering the Data}{41}
-\contentsline {paragraph}{ }{41}
-\contentsline {section}{\numberline {3.4}Gathered Data}{42}
-\contentsline {paragraph}{ }{42}
-\contentsline {section}{\numberline {3.5}Stakeholder Analysis}{43}
-\contentsline {paragraph}{}{43}
-\contentsline {paragraph}{}{43}
-\contentsline {paragraph}{}{43}
-\contentsline {section}{\numberline {3.6}Possible Alternative Solutions}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {chapter}{\numberline {4}Proposed Solution}{48}
+\contentsline {subsection}{\numberline {3.1.1}Gathering the Data}{38}
+\contentsline {paragraph}{ }{38}
+\contentsline {subsection}{\numberline {3.1.2}Gathered Data}{40}
+\contentsline {paragraph}{ }{40}
+\contentsline {section}{\numberline {3.2}Stakeholder Analysis}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {section}{\numberline {3.3}Possible Alternative Solutions}{44}
+\contentsline {paragraph}{}{44}
+\contentsline {chapter}{\numberline {4}Proposed Solution}{46}
+\contentsline {section}{\numberline {4.1}Gaman: A Decision Support System for Public Transportation Systems}{46}
+\contentsline {paragraph}{}{46}
+\contentsline {section}{\numberline {4.2}System Architecture}{46}
+\contentsline {paragraph}{ }{46}
+\contentsline {subsection}{\numberline {4.2.1}System Entities \& their Relationships}{48}
 \contentsline {paragraph}{}{48}
-\contentsline {section}{\numberline {4.1}System Architecture}{48}
-\contentsline {paragraph}{ }{48}
-\contentsline {subsection}{\numberline {4.1.1}System Entities \& their Relationships}{50}
-\contentsline {paragraph}{}{50}
-\contentsline {paragraph}{}{50}
-\contentsline {section}{\numberline {4.2}System Features}{51}
-\contentsline {paragraph}{ }{51}
-\contentsline {section}{\numberline {4.3}URL of prototype system}{53}
-\contentsline {paragraph}{}{53}
-\contentsline {section}{\numberline {4.4}UI Screenshots}{54}
-\contentsline {paragraph}{}{54}
-\contentsline {chapter}{\numberline {5}Research Evaluation}{61}
-\contentsline {paragraph}{}{61}
-\contentsline {section}{\numberline {5.1}User Evaluation of Prototype}{61}
-\contentsline {paragraph}{}{61}
-\contentsline {paragraph}{}{61}
-\contentsline {subsection}{\numberline {5.1.1}Feedback of the Schedulers}{62}
-\contentsline {paragraph}{}{62}
-\contentsline {subsection}{\numberline {5.1.2}Feedback of the Commuters}{62}
-\contentsline {paragraph}{}{62}
-\contentsline {section}{\numberline {5.2}Literature Published related to this Research Project}{66}
-\contentsline {paragraph}{}{66}
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{72}
-\contentsline {section}{\numberline {6.1}Conclusion}{72}
-\contentsline {paragraph}{}{72}
-\contentsline {section}{\numberline {6.2}Future Work}{73}
-\contentsline {paragraph}{}{73}
-\contentsline {subsection}{\numberline {6.2.1}Localization to include Sinhala and Tamil Languages}{73}
-\contentsline {paragraph}{}{73}
-\contentsline {chapter}{\numberline {A}Complete Set of Gathered Data}{75}
-\contentsline {paragraph}{ }{75}
+\contentsline {paragraph}{}{48}
+\contentsline {section}{\numberline {4.3}System Features}{49}
+\contentsline {paragraph}{ }{49}
+\contentsline {section}{\numberline {4.4}URL of prototype system}{51}
+\contentsline {paragraph}{}{51}
+\contentsline {section}{\numberline {4.5}UI Screenshots}{52}
+\contentsline {paragraph}{}{52}
+\contentsline {chapter}{\numberline {5}Research Evaluation}{59}
+\contentsline {paragraph}{}{59}
+\contentsline {section}{\numberline {5.1}User Evaluation of Prototype}{59}
+\contentsline {paragraph}{}{59}
+\contentsline {paragraph}{}{59}
+\contentsline {subsection}{\numberline {5.1.1}Feedback of the Schedulers}{60}
+\contentsline {paragraph}{}{60}
+\contentsline {subsection}{\numberline {5.1.2}Feedback of the Commuters}{60}
+\contentsline {paragraph}{}{60}
+\contentsline {section}{\numberline {5.2}Literature Published related to this Research Project}{64}
+\contentsline {paragraph}{}{64}
+\contentsline {chapter}{\numberline {6}Possible Future Work \& Conclusion }{70}
+\contentsline {section}{\numberline {6.1}Future Work}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {subsection}{\numberline {6.1.1}Localization to include Sinhala and Tamil Languages}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {section}{\numberline {6.2}Conclusion}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {chapter}{\numberline {A}Complete Set of Gathered Data}{73}
+\contentsline {paragraph}{ }{73}

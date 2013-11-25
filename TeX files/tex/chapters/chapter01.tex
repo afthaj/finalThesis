@@ -5,20 +5,16 @@
 
 \paragraph{ } The Private Bus Transportation System is a famously contentious topic in Sri Lanka. For the average commuter, complaining about the system is part and parcel of everyday life. As a commuter myself and having used public transportation extensively for more than a decade, I have wondered many a time about the reasons why the bus service is in this state and why people keep complaining about it so very vehemently. The constant complaints are justified, as the bus service is grossly inefficient and lack proper service quality. The inefficiency in the system leads to lost productivity and dissatisfaction by the commuters. Eventually, it is the country that suffers from the lack of an efficient public transportation system for the people.
 
-The initial objective of my project was to pinpoint the existing problems and possibly provide an IT solution for them. During the course of the research and interviews with the numerous people responsible, it occurred to me that the system has a myriad of things wrong with it. 
+The initial objective of my project was to pinpoint the existing problems and possibly provide an IT solution for them. During the course of the research and interviews with the numerous people involved with the public transportation sector, it occurred to me that the system has a myriad of things wrong with it. Careful management was the only requirement to overcome some problems, while others required a restructuring of the system, and still others required just an implementation of a solution and regulation of the service properly. Further research was required to identify underlying causes and provide a holistic solution to the problems. As I was passionate about the problem, I was intent on conducting a research to find solutions.
 
-Careful management was the only requirement to overcome some problems, while others required a restructuring of the system, and still others required just an implementation of a solution and regulation of the service properly. Further research was required to identify underlying causes and provide a holistic solution to the problems. As I was passionate about the problem, I was intent on conducting a research to find solutions.
-
-It is in this background that my research into the usage of a Decision Support System to solve problems in the local Public Transportation System was carried out. I did not immediately arrive at this solution, but gradually understood that the problems and the requirements of the stakeholders demanded such a system. Consequently, I attempted to identify and abstract the system's key components so that the over-arching concept can be applied to similar transportation systems in other developing countries.
+It is in this background that my research into the usage of an IT-based system to solve problems in the local public transportation service was carried out. I did not immediately arrive at a solution, but gradually understood that the problems and the requirements of the stakeholders demanded such a system. Consequently, I attempted to identify and abstract the system's key components so that the over-arching concept can be applied to similar transportation systems in other developing countries.
 
 \newpage
 
 \section{Background Study: The Case of the \acrshort{wp} \acrshort{rpta}}
 \label{section-BackgroundStudy}
 
-\paragraph{ } Bus Passenger Transport is the highest and most widely used mode of public transport in Sri Lanka. The system is divided into Inter-Provincial and Intra-Provincial bus services. The service is operated by privately run (private buses) as well as state-run (SLTB) buses. The Sri Lanka Transport Board manages the SLTB buses and their jurisdiction is island wide regardless of the district or province. However, the organizational structure of private buses is different. All Inter-Provincial Private Buses are governed by the National Transport Commission (NTC) while the private bus services within each of Sri Lanka's provinces are governed by the Passenger Transport Authorities of the respective provinces. Accordingly, the Western Province Road Passenger Transport Authority (WP RPTA) handles the governance of the Private Bus Passenger Transport System in the Western Province. Please refer to Figure~\ref{image-busTransportSystemStructure} for an illustration of the Structure.
-
-The major difference between the system in use in Sri Lanka and other countries is that the owners and operators of the buses are independent contractors and not the Central Government or the Provincial Authority. This has led to numerous problems and we shall discuss them in detail during the course of this document.
+\paragraph{ } Bus Passenger Transport is the highest and most widely used mode of public transport in Sri Lanka. The system is divided into Inter-Provincial and Intra-Provincial bus services. The service is operated by privately run (private buses) as well as state-run (\acrshort{sltb}) buses. The Sri Lanka Transport Board manages the \acrshort{sltb} buses and their jurisdiction is island wide regardless of the district or province. However, the organizational structure of private buses is different. All Inter-Provincial Private Buses are governed by the National Transport Commission (\acrshort{ntc}) while the private bus services within each of Sri Lanka's provinces are governed by the Passenger Transport Authorities of the respective provinces. Accordingly, the Western Province Road Passenger Transport Authority (\acrshort{wp} \acrshort{rpta}) handles the governance of the Private Bus Passenger Transport System in the Western Province. Please refer to Figure~\ref{image-busTransportSystemStructure} for an illustration of the Structure.
 
 \begin {figure} [h!]
 \centering
@@ -27,7 +23,11 @@ The major difference between the system in use in Sri Lanka and other countries 
 \label {image-busTransportSystemStructure}
 \end {figure}
 
-Let us take a look at the statistics involved with the bus service in Sri Lanka. According to the Draft National Policy on Transport in Sri Lanka \cite{MinistryofTransport2008}, public transport accounts for nearly 73\% of the total motorized passenger transport in the country. It also serves as the only means of transport for the majority of the population.
+The major difference between the system in use in Sri Lanka and other countries is that the owners and operators of the buses are independent contractors and not the Central Government or the Provincial Authority. This has led to numerous problems and we shall discuss them in detail during the course of this document.
+
+\subsection{Statistics of the Bus Service in Sri Lanka}
+
+Let us take a look at some statistics involved with the bus service in Sri Lanka to fully grasp the magnitude of the system. According to the Draft National Policy on Transport in Sri Lanka \cite{MinistryofTransport2008}, public transport accounts for nearly 73\% of the total motorized passenger transport in the country. It also serves as the only means of transport for the majority of the population.
 
 Of this, bus transportation accounts for nearly 68\% (a 93\% share in the public transport sphere), while rail transport accounts for the remaining 5\% (a 7\% share in the public transport sphere) \cite{MinistryofTransport2008}.
 
@@ -42,11 +42,11 @@ Within the bus transportation system, state-run bus services account for a 23\% 
 
 Taking a look at the state-run bus service, data obtained from the Sri Lanka Transport Board show that approximately 2.5 million passengers island wide commute daily on close to 4500 \acrshort{sltb} buses \cite{SriLankaTransportBoard2010}. These buses travel an average of 2000km a day \cite{SriLankaTransportBoard2012}. 
 
-Considering the buses operated by private bus operators, it is estimated that 10 million commuters travel daily on approximately 18,000 private buses currently in use in the country \cite{Silva2010}. Data gathered from the WP RPTA show that there are around 7000 private buses servicing the Western Province and its’ routes which is close to 450 in number. 
+Considering the buses operated by private bus operators, it is estimated that 10 million commuters travel daily on approximately 18,000 private buses currently in use in the country \cite{Silva2010}. Data gathered from the \acrshort{wp} \acrshort{rpta} show that there are around 7000 private buses servicing the Western Province and its’ routes which is close to 450 in number. 
 
-Looking at these statistics, we clearly see that the buses run by the private bus operators are far more in number compared to the state-run buses. It also shows that the majority of the commuters rely on the buses operated by private bus operators. These buses function as small independent operators and what is astounding is the fact that in 30 years of operation, not even a single major private bus operator has emerged. The private bus “cartel” is highly unionized and dictates terms to the commuters as well as the government on a regular basis \cite{AdaDerana2012}. Bus strikes are very common and when they do happen, the commuters are placed in great discomfort \cite{Samarajiva2012}, \cite{ColomboPage2012}.
+Looking at these statistics, we clearly see that the buses run by the private bus operators are far more in number compared to the state-run buses. It also shows that the majority of the commuters rely on the buses operated by private bus operators. These buses function as small independent operators and in 30 years of service operation, not even a single major private bus operator has emerged. The private bus “cartel” is highly unionized and dictates terms to the commuters as well as the government on a regular basis \cite{AdaDerana2012}. Bus strikes are very common and when they do happen, the commuters are placed in great discomfort \cite{Samarajiva2012, ColomboPage2012}.
 
-In contrast, the state run bus service has a governing body, the SLTB, but it has been in steady decline since the 1970’s owing to mismanagement and cost overruns \cite{AnswersDotCom2012}. It has now become a money-sucking state entity and continues to waste the tax payer's money with no solution in the horizon \cite{LBO2011}, \cite{Sirimanne2013}. The number of SLTB buses in daily operation is well below the number of private buses and because of this, the state-run bus service is unreliable. Presently, it is but a teardrop in a sea of public transport dominated by the private bus operators. For example, as pointed out previously, there are more private buses in the western province (around 7000) than there are SLTB buses in the entire island (around 4500).Given that the average commuter cannot and does not wait for hours on end till an SLTB bus arrives, they have no other option but to use the private bus service. \cite{Wijayapala2012}, \cite{Azwer2012}
+In contrast, the state run bus service has a governing body, the SLTB, but it has been in steady decline since the 1970’s owing to mismanagement and cost overruns \cite{AnswersDotCom2012}. It has now become a money-sucking state entity and continues to waste the tax payer's money with no solution on the horizon \cite{LBO2011, Sirimanne2013}. The number of SLTB buses in daily operation is well below the number of private buses and because of this, the state-run bus service is unreliable. Presently, it is but a teardrop in a sea of public transport dominated by the private bus operators. For example, as pointed out previously, there are more private buses in the western province (around 7000) than there are SLTB buses in the entire island (around 4500).Given that the average commuter cannot and does not wait for hours on end till an SLTB bus arrives, they have no other option but to use the private bus service. \cite{Wijayapala2012, Azwer2012}
 
 \subsection{Justification of Research Project}
 
@@ -59,8 +59,6 @@ As mentioned previously, there are around 7000 private buses servicing the Weste
 Also of importance to note is that the number of complaints related to the Inter-Provincial Private Bus Service has doubled this year compared to last year. Chairman of the NTC is reported as saying that over 40 complaints are received per day and this number is increasing \cite{Wickremasekara2012}, \cite{Range2012}. This means that the current strategy of scheduling buses is clearly not working properly which is leading to increased commuter dissatisfaction and complaints.
 
 Therefore, research into the private bus passenger transport system is essential. It is a large system that affects a large amount of people on a daily basis and the service needs to improve significantly in order for this country to be more productive, the people to be satisfied and for the country to be more attractive to tourists.
-
-\newpage
 
 \section{Existing Problems}
 \label{section-ExistingProblems}
@@ -88,8 +86,6 @@ There are several issues that commuters highlight consistently. These are listed
 \end {enumerate}
 References: \cite{Wickremasekara2012, Range2012}, comments by frequent commuters, data gathered through the Pilot Route Survey.
 
-\newpage
-
 \section{Reasons for the Problems}
 Each of the above mentioned problems have reasons that may cause them. Let us take a look at some possible reasons.
 \begin {enumerate}
@@ -114,8 +110,6 @@ Each of the above mentioned problems have reasons that may cause them. Let us ta
 \item The blame for this lies with the bus operators as well as the regulatory body, the Western Province Road Passenger Transport Authority. The WP RPTA does not have a proper channel (website, information booklet etc.) to display and disseminate information regarding bus timetables and the rules and regulations governing the bus services etc. It is compulsory and of the utmost importance that this and other information is displayed to the pubic freely but it is not being done properly leading to the public frequently complaining and being misinformed.
 \end {itemize}
 \end {enumerate}
-
-\newpage
 
 \section{Current Bus Scheduling Process in Sri Lanka}
 \label{section-CurrentBusSchedulingProcessInSriLanka}
@@ -156,9 +150,6 @@ The timetables that have been implemented currently have research backing them b
 Obvious solutions to these problems would be to reduce the trip times in the schedules even more and implement tougher regulations. However, trip times can only be reduced up to a certain point before they become impracticable. The Scheduling Unit is revising the schedules at the moment but it is moving at a snail’s pace, not unlike the buses they schedule. 
 
 Also of note is how the revision process is handled. A revision to an existing schedule is not done unless and until sufficient complaints are received from the commuters. One would then think that there was a reasonably efficient complaint process and system in place but this is not so. The complaint mechanism is non-structured which leads to a perfect storm of problems. The commuters are not made aware of the complaint mechanism (no proper channel of disseminating information to the public by way of website/mobile app etc) and complaints are not received, documented and acted upon in a proper fashion (At times only the security guard at the scheduling unit is available to answer the phone and take down complaints when they are received) leading to the status quo continuing. (Source: Discussions with the Scheduling Personnel at the WP RPTA)
-
-\newpage
-
 
 \section{Decision Support Systems: an Introduction}
 \label{section-DSSIntro}

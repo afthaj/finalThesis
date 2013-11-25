@@ -17,15 +17,7 @@
 \usepackage[acronym]{glossaries}
 \makeglossaries
 
-\newacronym{sl}{SL}{Sri Lanka}
-\newacronym{wp}{WP}{Western Province}
-\newacronym{rpta}{RPTA}{Road Passenger Transport Authority}
-\newacronym{ntc}{NTC}{National Transport Commission}
-\newacronym{sltb}{SLTB}{Sri Lanka Transport Board}
-\newacronym{dss}{DSS}{Decision Support System}
-\newacronym{ict}{ICT}{Information and Communication Technology}
-\newacronym{is}{IS}{information System}
-\newacronym{gps}{GPS}{Global Positioning System}
+\input{tex/frontmatter/abbreviations}
 
 \begin{document}
 
@@ -46,22 +38,15 @@ A Decision Support System
 
 \input{tex/frontmatter/acknowledgements}
 
-
-\newpage
-
-\pagenumbering{arabic}
 \tableofcontents
-\newpage
 
-\pagenumbering{arabic}
 \listoffigures
-\newpage
 
 \listoftables
-\newpage
 
-\printglossaries % prints just the list of acronyms
-\newpage
+\printglossary[type=\acronymtype] % prints just the list of acronyms
+
+
 
 \mainmatter
 

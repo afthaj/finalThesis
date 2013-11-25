@@ -82,6 +82,9 @@ The Crew Rostering Problem (CRP) aims at determining an optimal sequencing of a 
 
 This literature review looked at the different steps involved in the bus scheduling process. It also reviewed the literature related to each step. This literature is what will act as reference material as we attempt to present a new model of scheduling buses. The next chapter will detail the research methodology and the proposed model for scheduling buses in the Western Province.
 
+\section{Loitering of Buses at Bus Stops} Loitering refers to the time the bus lingers at the bus stop waiting for more passengers after the initial group of passengers have alighted and boarded the bus. The time taken for commuters to get on and off the bus is not considered under the Loiter Time. A common complaint by commuters is that buses, after dropping off the passengers and allowing more to get in, idle at the bus stop usually until the next bus arrives. This leads to the people who are already in the bus waiting idly at the bus stop in a crowded bus senselessly. This action also picks up the passengers that are meant to go in the later bus which leads to the later bus not having enough passengers to cover their costs and thereby they too loiter at the bus stop. This occurs continuously resulting in the commuters being kept waiting in the bus at the bus stop for no reason. Loitering is a major issue with the Private Bus Service and frequent complaints are made by commuters regarding it. It is detrimental to the proper dispatching of buses as it delays the commuters and makes it difficult for the schedulers to draw up correct timetables (Source: Interviews with the WP RPTA and the NTC personnel).
+
+The data was gathered in this manual way because there is no automated data gathering mechanism currently in place for the private bus system in the Western Province. Further elaboration on automated data gathering and a brief description of the current state of affairs are mentioned in the following section.
 
 
 \section{Automated Data Gathering}
@@ -133,11 +136,6 @@ As its popularity grows, NFC or Near-Field Communication has garnered the attent
 
 As mentioned previously, the NTC has implemented a GPS-based Vehicle Tracking system in the Inter-Provincial Bus Transport Service as an Automated Data Collection System. However, it only collects the Vehicle Location data. The Passenger Counts data is not collected automatically and there is no system in place to do so. However, the Inter-Provincial Bus Service is more developed than the Intra-Provincial Service in the Western Province as the NTC has made it compulsory for Inter-Provincial buses to have Electronic Ticketing Machines (ETM). This means that at least the passenger counts data \textit{is} recorded. The data that is saved in the Ticketing Machines could be accessed later and the data be obtained for scheduling purposes.
 
-
-
-
-\newpage
-
 \section{Decision Support Systems}
 \label {section-DSS}
 
@@ -149,7 +147,9 @@ Having said that, the term DSS in itself is difficult to define with academics a
 
 \paragraph{ } The concept of a Decision Support System has been around since the 1950's but only recently has it increased in popularity and adoption in the industry. With the improvement in technology, the research into DSS's has also increased. The abstract concept of a system that aids in the decision-making process has its roots in the late 1950's and early 1960's through research done at the Carnegie Institute of Technology. This later grew into information systems research through work done at the Massachusettes Institute of Technology in the 1960's. DSS's started to become a research topic of its own in the mid-1970's with more and more research following through the mid to late 1980's \cite{Keen1980, Power2003}.
 
-\cite{Power2003} lists 5 main categories of DSS's which are,
+\subsection{Categories of Decision Support Systems}
+
+\paragraph{} There are 5 main categories of DSS's which are \cite{Power2003},
 
 \begin {itemize}
 \item \textbf{Communication-driven DSS} is a type of DSS that emphasizes communications, collaboration and shared decision-making support. A simple bulletin board or threaded email is the most elementary level of functionality. The comp.groupware FAQ defines groupware as "software and hardware for shared interactive environments" intended to support and augment group activity. Groupware is a subset of a broader concept called Collaborative Computing. Communications-Driven DSS enable two or more people to communicate with each other, share information and co-ordinate their activities. Group Decision Support Systems or GDSS is a hybrid type of DSS that allows multiple users to work collaboratively in groupwork using various software tools. Examples of group support tools are: audio conferencing, bulletin boards and web-conferencing, document sharing, electronic mail, computer supported face-to-face meeting software, and interactive video.; 
@@ -167,8 +167,6 @@ Having said that, the term DSS in itself is difficult to define with academics a
 \item Outputs - this is used so that the user of the system can analyze the data and potentially make a decision based on the information presented.;
 \item Decision Making - this is the ultimate goal of the User who utilizes the DSS. The goal of the system is to aid the User in their decision-making process.;
 \end {enumerate}
-
-\newpage
 
 \section{Transportation Information Systems of cities in other Developing Countries}
 
