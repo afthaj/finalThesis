@@ -1,31 +1,10 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: final thesis.aux
-White space in argument---line 98 of file final thesis.aux
- : \citation{Laudon
- :                  1988}
-I'm skipping whatever remains of this command
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: final thesis.aux
 The style file: plain.bst
 Database file #1: FYP.bib
-I was expecting a `,' or a `}'---line 425 of file FYP.bib
- : 
- : url="http://publib.boulder.ibm.com/infocenter/cicsts/v3r2/index.jsp?topic=\%2Fcom.ibm.cics.ts.productoverview.doc\%2Fconcepts\%2FTransactionProcessing.html"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 433 of file FYP.bib
- : 
- : url="http://www.hsc.csu.edu.au/ipt/trans_systems/4-1/tps.htm"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--string name "computer" is undefined
---line 490 of file FYP.bib
-I was expecting a `,' or a `}'---line 490 of file FYP.bib
- : title=computer 
- :                Science: the Discipline",
-I'm skipping whatever remains of this entry
 Warning--empty booktitle in Caprara1995
 Warning--empty booktitle in Ceder2009
-Warning--empty title in Denning1999
-Warning--empty journal in Denning1999
-Warning--empty year in Denning1999
 Warning--empty booktitle in Freling2000
 Warning--empty booktitle in Freling2003
 Warning--empty booktitle in Kharraziha2003
@@ -33,4 +12,45 @@ Warning--empty booktitle in Kumarage2007
 Warning--empty booktitle in Valdes2010
 Warning--empty booktitle in Wren1997
 Warning--empty booktitle in Xie2012
-(There were 4 error messages)
+You've used 63 entries,
+            2118 wiz_defined-function locations,
+            790 strings with 11556 characters,
+and the built_in function-call counts, 14251 in all, are:
+= -- 1292
+> -- 608
+< -- 0
++ -- 256
+- -- 186
+* -- 561
+:= -- 2451
+add.period$ -- 188
+call.type$ -- 63
+change.case$ -- 270
+chr.to.int$ -- 0
+cite$ -- 72
+duplicate$ -- 552
+empty$ -- 1371
+format.name$ -- 186
+if$ -- 3024
+int.to.chr$ -- 0
+int.to.str$ -- 63
+missing$ -- 27
+newline$ -- 317
+num.names$ -- 126
+pop$ -- 540
+preamble$ -- 1
+purify$ -- 219
+quote$ -- 0
+skip$ -- 429
+stack$ -- 0
+substring$ -- 322
+swap$ -- 62
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 242
+warning$ -- 9
+while$ -- 126
+width$ -- 65
+write$ -- 623
+(There were 9 warnings)

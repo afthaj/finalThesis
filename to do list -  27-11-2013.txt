@@ -1,0 +1,14 @@
+chapter 1
+finish revision
+
+chapter 3
+revise whole chapter
+
+chapter 4
+UI screenshots
+add text for screenshots
+test cases to test prototype
+
+chapter 5
+sort out the layout issues
+add text for tables and figures

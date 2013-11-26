@@ -56,10 +56,6 @@ Delhi~Transport Corporation.
 \newblock Delhi transport corporation official website, 2012.
 \newblock (Online; Accessed 3rd October 2013).
 
-\bibitem{IBM2013}
-IBM Corporation.
-\newblock Cics transaction server for z/os, version 3.2 transaction processing.
-
 \bibitem{Daganzo2008}
 Carlos~F Daganzo.
 \newblock A dynamic approach to eliminate bus bunching.
@@ -67,6 +63,8 @@ Carlos~F Daganzo.
 
 \bibitem{Denning1999}
 Peter Denning.
+\newblock Computer science: the discipline.
+\newblock {\em Encyclopaedia of Computer Science (2000 Edition)}, 1999.
 
 \bibitem{AdaDerana2012}
 Ada Derana.
@@ -128,6 +126,11 @@ Prof. Amal~S. Kumarage, H.~A.~C. Perera, and M.~D. R.~P. Jayaratne.
   route length.
 \newblock 2007.
 
+\bibitem{Laudon1988}
+K.C. Laudon and J.P. Laudon.
+\newblock {\em Management Information Systems, (2nd edition)}.
+\newblock Macmillan, 1988.
+
 \bibitem{ISI2013}
 The~Internationa lStatistical Institute.
 \newblock Developing countries, 2013.
@@ -179,6 +182,9 @@ Lanka~Business Online.
 \bibitem{NSWHSC2013}
 NSW~HSC Online.
 \newblock What is a transaction processing system?
+\newblock (Reproduced with permission from NSW HSC Online http://hsc.csu.edu.au
+  © NSW Department of Education and Communities, and Charles Sturt University,
+  2013).
 
 \bibitem{ColomboPage2012}
 Colombo Page.

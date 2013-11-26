@@ -8,15 +8,18 @@
 The main research objective was to find a solution to help all the stakeholders involved in the public transportation system. In order to do so, people in the scheduling process of the transport system as well authoritative persons in charge of regulating the service were interviewed. In particular, the NTC and the WP RPTA was contacted and several relevant people were interviewed to understand the system \& the service and to ascertain the current problems of the system. A list of persons interviewed have been noted below.
 
 \begin{itemize}
-\item Mr. Pradeep Fernando - Head of the GPS Tracking and Monitoring Unit, National Transport Commission.
-\item Mr. Dhanushka - Team Member, GPS Tracking and Monitoring Unit, National Transport Commission.
-\item Mr. Muditha Navaratne - Timetable Unit of the National Transport Commission.
-\item Mr. K.A.R.A. Ranjith - Operations Manager, Western Province Passenger Transport Authority.
-\item Mr. Mahesh Nishan - Scheduling Officer, Western Province Passenger Transport Authority.
-\item Mr. Theja Athukorala - Scheduling Officer, Western Province Passenger Transport Authority.
+\item Mr. Pradeep Fernando - Head of the \acrshort{gps} Tracking and Monitoring Unit, \acrshort{ntc}.
+\item Mr. Dhanushka - Team Member, \acrshort{gps} Tracking and Monitoring Unit, \acrshort{ntc}.
+\item Mr. Muditha Navaratne - Timetable Unit of the \acrshort{ntc}.
+\item Mr. K.A.R.A. Ranjith - Operations Manager, \acrshort{wp} \acrshort{rpta}.
+\item Mr. Mahesh Nishan - Scheduling Officer, \acrshort{wp} \acrshort{rpta}.
+\item Mr. Theja Athukorala - Scheduling Officer, \acrshort{wp} \acrshort{rpta}.
+\item Mr. M. T. L. Cooray - Training Officer, \acrshort{wp} \acrshort{rpta}.
 \end{itemize}
 
 After the interviews were carried out, an idea of the transportation system and its issues began to emerge. It was then that a pilot route survey was conducted. Details of the survey is mentioned in the following section.
+
+
 
 \section{Pilot Route Survey}
 
@@ -28,11 +31,9 @@ There are 49 buses in in the normal fleet in total with 35 in daily operation. A
 
 \paragraph{ } Data was collected by physically traveling in the bus at various times and manually counting the number of passengers that get on and off the bus. This provided information about the passenger demand and load situations in the bus. The time at which the bus arrives and departs each bus stop was also observed and recorded. The time spent at each bus stop was calculated using this data. If the bus loiters at a certain bus stop, the amount of time the driver spends loitering was also recorded.
 
-The data was gathered in this manual way because there is no automated data gathering mechanism currently in place for the private bus system in the Western Province. Further elaboration on automated data gathering and a brief description of the current state of affairs are mentioned in the following section.
+The data was gathered in this manual way because there is no automated data gathering mechanism currently in place for the private bus system in the Western Province. As mentioned previously, the current data gathering is done manually by the schedulers at the \acrshort{wp} \acrshort{rpta}. The implementation of an \acrshort{adcs} has not been carried out yet due to the reasons mentioned earlier in the chapter. Therefore, the problem remains, how can the data be collected in order to aid in the scheduling and timetabling activities of the \acrshort{rpta}.
 
-As mentioned previously, the current data gathering is done manually by the schedulers at the WP RPTA. The implementation of an ADCS has not been carried out yet due to the reasons mentioned earlier in the chapter. Therefore, the problem remains, how can the data be collected in order to aid in the scheduling and timetabling activities of the RPTA.
-
-The data that is required for the schedulers is the Vehicle Location data and the Passenger Demand data. The former could be obtained by using just a few GPS tracking devices such as the ones the NTC uses in their system, which are fixed temporarily to a few buses. The problem the schedulers face currently is that they have to physically travel in the buses to collect the data. Alternatively, they could use a few (3 or 4) devices to temporarily track the selected buses for the purposes of the survey freeing the need for the schedulers to travel in the buses physically themselves and gather the data. The devices don't have to be fixed permanently onto the buses, just when the survey is being conducted so that the data can be gathered on its movements.
+The data that is required for the schedulers is the Vehicle Location data and the Passenger Demand data. The former could be obtained by using just a few \acrshort{gps} tracking devices such as the ones the \acrshort{ntc} uses in their system, which are fixed temporarily to a few buses. The problem the schedulers face currently is that they have to physically travel in the buses to collect the data. Alternatively, they could use a few (3 or 4) devices to temporarily track the selected buses for the purposes of the survey freeing the need for the schedulers to travel in the buses physically themselves and gather the data. The devices don't have to be fixed permanently onto the buses, just when the survey is being conducted so that the data can be gathered on its movements.
 
 Gathering of the Passenger Demand data is a little more trickier. Passenger Demand is basically a reflection of the number of people that travel in a bus and details of where they get on and off the bus. This could be achieved by counting the number of tickets issued and analyzing the ticketing data. This method however, has a major drawback. It assumes that all commuters are issued a ticket which may not always be the case. Also, not all buses currently have Electronic Ticketing Machines which is an obstacle. The fact that it is not compulsory for the private buses in the WP plying on intra-provincial routes to have Electronic Ticketing Machines is also a major disadvantage to this method. In conclusion, it is clearly evident that reform and stricter regulation of the service is required in order to improve it.
 
@@ -127,7 +128,6 @@ Duration of Trip & & 44 mins & \\
 \end{itemize}
 
 
-\newpage
 
 \section {Stakeholder Analysis}
 \label {StakeholderAnalysis}
@@ -159,4 +159,19 @@ Duration of Trip & & 44 mins & \\
 \label {image-timetablingProcessSteps}
 \end {figure}
 
+The definition of a \acrshort{dss} and how it relates to the transportation problem has already been discussed in this document. Therefore, in the next Chapter, we will see what the proposed solution is. This will include the higher-level system architecture, the system features, the main entities \& their relationships and a few UI screenshots of the prototype that was built for user testing.
+
+
+
+\section{Evaluation of Alternatives}
+
+\paragraph{}
+
+
+
+\section{Solution Formulation}
+
+\paragraph{}
+
 % WRITE A PROPER CHAPTER ENDING THAT EXPLAINS THE ROADMAP OF THE PROJECT AND THE THESIS DOCUMENT FROM THIS POINT FORWARD
+
