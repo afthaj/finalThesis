@@ -1,10 +1,31 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: final thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: final thesis.aux
+White space in argument---line 98 of file final thesis.aux
+ : \citation{Laudon
+ :                  1988}
+I'm skipping whatever remains of this command
 The style file: plain.bst
 Database file #1: FYP.bib
+I was expecting a `,' or a `}'---line 425 of file FYP.bib
+ : 
+ : url="http://publib.boulder.ibm.com/infocenter/cicsts/v3r2/index.jsp?topic=\%2Fcom.ibm.cics.ts.productoverview.doc\%2Fconcepts\%2FTransactionProcessing.html"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 433 of file FYP.bib
+ : 
+ : url="http://www.hsc.csu.edu.au/ipt/trans_systems/4-1/tps.htm"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--string name "computer" is undefined
+--line 490 of file FYP.bib
+I was expecting a `,' or a `}'---line 490 of file FYP.bib
+ : title=computer 
+ :                Science: the Discipline",
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in Caprara1995
 Warning--empty booktitle in Ceder2009
+Warning--empty title in Denning1999
+Warning--empty journal in Denning1999
+Warning--empty year in Denning1999
 Warning--empty booktitle in Freling2000
 Warning--empty booktitle in Freling2003
 Warning--empty booktitle in Kharraziha2003
@@ -12,45 +33,4 @@ Warning--empty booktitle in Kumarage2007
 Warning--empty booktitle in Valdes2010
 Warning--empty booktitle in Wren1997
 Warning--empty booktitle in Xie2012
-You've used 55 entries,
-            2118 wiz_defined-function locations,
-            755 strings with 10559 characters,
-and the built_in function-call counts, 12559 in all, are:
-= -- 1132
-> -- 546
-< -- 0
-+ -- 230
-- -- 168
-* -- 506
-:= -- 2160
-add.period$ -- 164
-call.type$ -- 55
-change.case$ -- 243
-chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 488
-empty$ -- 1200
-format.name$ -- 168
-if$ -- 2656
-int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 24
-newline$ -- 277
-num.names$ -- 110
-pop$ -- 471
-preamble$ -- 1
-purify$ -- 194
-quote$ -- 0
-skip$ -- 379
-stack$ -- 0
-substring$ -- 282
-swap$ -- 54
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 212
-warning$ -- 9
-while$ -- 110
-width$ -- 57
-write$ -- 544
-(There were 9 warnings)
+(There were 4 error messages)
