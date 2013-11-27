@@ -6,9 +6,20 @@ revise whole chapter
 
 chapter 4
 UI screenshots
+	home page
+	home page with route finder
+	admin home page
+	admin view bus route
+	admin view bus stop
+	admin view bus
+	admin view bus personnel
+	admin add new complaint
+	admin view complaint
+	admin list of surveys
+	admin list of trips
+	admin trip information
 add text for screenshots
 test cases to test prototype
 
 chapter 5
-sort out the layout issues
 add text for tables and figures

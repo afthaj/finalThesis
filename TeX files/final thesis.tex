@@ -1,18 +1,16 @@
 \documentclass[12pt, oneside]{book}
 \pagestyle{headings}
-
 \linespread{1.3}
-
-\usepackage{geometry}
-\geometry{a4paper}
-
+\usepackage[a4paper, top=1in, bottom=1in, left=1in, right=0.75in]{geometry}
 \usepackage{graphicx}
-\graphicspath{{img/}}
+\graphicspath{{img/figures/}{img/screenshots/}}
 \usepackage{amssymb}
 \usepackage{url}
-
 \usepackage[table]{xcolor}
 \usepackage{color, colortbl}
+\usepackage{float}
+%\usepackage{fullpage}
+\usepackage{pdflscape}
 
 \usepackage[acronym]{glossaries}
 \makeglossaries
@@ -20,17 +18,6 @@
 \input{tex/frontmatter/abbreviations}
 
 \begin{document}
-
-
-\title{
-A Decision Support System
-\\ for Public Transportation
-\\ in Developing Countries
-}
-\author{Aftha Jaldin}
-\date{\today}
-\maketitle
-
 
 \frontmatter
 
