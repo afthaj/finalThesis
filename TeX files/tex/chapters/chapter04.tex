@@ -3,13 +3,13 @@
 \chapter {Gaman: A solution prototype}
 \label{chapter-SolutionPrototype}
 
-\paragraph {} So far we have seen how the problem of the public transport system is structured and how it affects the stakeholders. We also saw how the nature of the problem demands a Decision Support System-like solution. This Chapter attempts to propose a DSS that deals with the public transportation problem. The architecture of the proposed system will be provided along with the proposed system features. The Chapter will end with a few UI screenshots of the prototype that was developed to test the usability and effectiveness of the functionality with the users.
+\paragraph {} So far we have seen how the problem of the public transport system is structured and how it affects the stakeholders. We also saw how the nature of the problem demands a Decision Support System-like solution. This Chapter provides details about the solution prototype, titled "Gaman", that was built for the purposes of this research project. The architecture of the system is provided along with the system features. The Chapter ends with a few UI screenshots of the prototype that was developed to test the usability and effectiveness of the functionality with the users.
 
 \section{System Architecture}
 
-\paragraph{ } The proposed system is designed as a web application following the client-server model. This design is the most conducive to the problem as it enables access to all stakeholders concerned in a distributed fashion. Therefore, commuters can access the system on-demand while allowing the schedulers access to the system and the data in real-time.
+\paragraph{ } Gaman is designed as a web application following the client-server model. This design is the most conducive to the problem as it enables access to all stakeholders concerned in a distributed fashion. Therefore, commuters can access the system on-demand while allowing the schedulers access to the system and the data in real-time.
 
-The prototype system used the three-tier architecture in the application. This architecture was chosen because it allowed the development of the prototype to be faster and more easily adaptable to possible requirements changes. The technologies used for the prototype are listed below,
+The solution prototype used the three-tier architecture in the application. This architecture was chosen because it allowed the development of the prototype to be faster and more easily adaptable to possible requirements changes. The technologies used for Gaman are listed below,
 
 \begin {itemize}
 \item Programming Language: PHP
@@ -28,7 +28,13 @@ The software architecture of the system is depicted in Figure~\ref{image-gamanSy
 \label {image-gamanSystemArchitecture}
 \end {figure}
 
-The prototype that was created only included a subset of this whole architecture due to time and resource constraints. Also of note is the fact that the Data Gathering subsystem involves the data gathering infrastructure and is beyond the scope of this research project. However, it is an imperative aspect of the whole system.
+The prototype that was created only included a subset of this whole architecture due to time and resource constraints. Specifically the Scheduling Methodology unit and the Schedule Generation module was not included due to the above mentioned project limitations. 
+
+\subsection{System users} 
+
+\paragraph{} The system is designed with the "Commuters", "Schedulers", "Bus Personnel" and "Transport Authority" (other transport authority personnel) as their core users. The "Schedulers" act as the main Admin role in the system and they have the permission to manipulate all entities and functions of the system.  The role of "Transport Authority" is also defined as an Admin role but only provided to other personnel at the transport authority such as higher management personnel, training and development officers etc.
+
+Separate user views have been provided for the "Commuters" and the "Bus Personnel". "Bus Personnel" refers to the owners and the operators of the buses together. The way the current bus system is structured, ownership of the buses is with third party private owners instead of the transport authority or the government. Therefore it is important to make the distincttion between the users and provide separate views for them.
 
 \subsection{System Entities \& their Relationships}
 
@@ -88,6 +94,27 @@ The above mentioned entities allow the Schedulers to carry out a route survey an
 
 \paragraph{} The prototype system can be found at the following URL: \url{http://gaman.byethost4.com/}. The system's Admin Interface can be found at \url{http://gaman.byethost4.com/admin/}. The login credentials for both these interfaces are listed below.
 
+\begin{table} [H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Area &username &password &First Name &Last Name \\
+\hline
+Public	&heisenberg	&123	&Walter	&White \\
+\hline
+Public	&whysoserious	&123	&The	&Joker \\
+\hline
+Public	&adopted	&123	&Loki	&Laufeyson \\
+\hline
+Public	&manofirony	&123	&Tony	&Stark \\
+\hline
+Admin	&admin	&123	&Admin	&User \\
+\hline
+\end{tabular}
+\caption{Login Credentials - Gaman}
+\label{table-loginCredentials}
+\end{table}
+
 \begin {itemize}
 
 \item Public Area
@@ -110,119 +137,186 @@ The system is an active project on GitHub. The code repository can be found at, 
 
 \section{UI Screenshots}
 
-\paragraph{} UI Screenshots of the prototype system are displayed below.
+\paragraph{} UI Screenshots of the prototype system are displayed below. The interfae has been kept as minimal as possible with only the required items being displayed so as not to deviate away from the users experience.
 
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{public-home}
+\includegraphics[scale=0.45]{public-home}
 \caption [Screenshot - Public Home Page] {Screenshot - Public Home Page}
 \label {image-public-home}
 \end {figure}
 
+\paragraph{} The home page of the public view of Gaman is displayed in Figure~\ref{image-public-home}. The front page contains the bus route finder so that users can input the origin and destination of their trip and find a suitable bus route directly from the home page. The links in the results area (shown in Figure~\ref{image-public-home}) are clickable so that users can click them directly for more information. This accesses the database and provides the users with information in a timely and accurate manner.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-home}
+\includegraphics[scale=0.35]{admin-home}
 \caption [Screenshot - Admin Home Page] {Screenshot - Admin Home Page}
 \label {image-admin-home}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-home} shows the Home page of the admin users. it provides a dashboard view of the feedback and complaints that are received. This allows the schedulers to gauge the level of service currently in the bus service. Whenever these numbers increase, the schedulers will be alerted that an iunvestigation needs to be made and possibly a revision to an existing route timetable. These links too are clickable so that the users can navigate easily within the system.
+
 \begin {figure} [H]
 \centering
 \includegraphics[scale=0.25]{admin-trip-information}
-\caption [Screenshot - ] {Screenshot - }
+\caption [Screenshot - Survey Trip information] {Screenshot - Survey Trip information}
 \label {image-admin-trip-information}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-trip-information} shows the user interface of the page where details of a trip in a given survey are displayed. Survey's are the primary source of input for the schedulers in their workflow and the display and analysis of the survey data is very important. This is why the data is visualized in this manner so that it aids the schedulers in their decision making process. By looking at it in a graphical form, schedulers can quickly gauge which areas need to improve and take steps accordingly.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-route}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-route}
+\caption [Screenshot - View Route Details - Route Map] {Screenshot - View Route Details - Route Map}
 \label {image-admin-view-route}
 \end {figure}
 
+\paragraph{} The inteface that shows the details of a given route is shown is Figure~\ref{image-admin-view-route}. The content on the View Route Details page consists of multiple tabs so that users can easily view the various details of the route without navigating to a sepratae page altogether. Figure~\ref{image-admin-view-route-2} and ~\ref{image-admin-view-route-3} also show the details in seprate tabs in the inteface. Figure~\ref{image-admin-view-route} shows the route and its stops on a map.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-route-2}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-route-2}
+\caption [Screenshot - View Route Details - List of Stops] {Screenshot - View Route Details - List of Stops}
 \label {image-admin-view-route-2}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-view-route-2} shows the various bus stops on the route and the order that they are followed. Again, the names of these bus stops are clickable making navigation easier for the user. When clicked, it navigates the user to the page of the respective bus stop. The interface of that page is given by Figure~\ref{image-admin-view-stop}  later on in this chapter.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-route-3}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-route-3}
+\caption [Screenshot - View Route Details - Complaints] {Screenshot - View Route Details - Complaints}
 \label {image-admin-view-route-3}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-view-route-3} shows the interface where the list of complaints received on that particular route are displayed. This is connected to the complaints and feedback functionalities of the system and displays information to the users that will allow them to choose a proper route for their journeys. Admins can also use this to gain a qualitative analysis of the present state of the route in terms of its feedback from the users.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-stop}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-stop}
+\caption [Screenshot - View Bus Stop Details - Panorama of stop location] {Screenshot - View Bus Stop Details - Panorama of stop location}
 \label {image-admin-view-stop}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-view-stop} shows the interface for the page for viewing details about a given bus stop. This page again uses the tabbed interface so that the various details of the bus stops are provided to the users in a structured and organised manner. A panoramic view of the bus stop's location is provided so that users can identify where the bus stop is from the surrounding lankdmarks.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-stop-2}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.35]{admin-view-stop-2}
+\caption [Screenshot - View Bus Stop Details - Location of stop on a map] {Screenshot - View Bus Stop Details - Location of stop on a map}
 \label {image-admin-view-stop-2}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-view-stop-2} is a screenshot of another of the tabs in the page that users are provided to view the details about a certain bus stop. This tab shows the location of the bus stop on a map. 
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-stop-3}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-stop-3}
+\caption [Screenshot - View Bus Stop Details - Routes that pass through bus stop] {Screenshot - View Bus Stop Details - Routes that pass through bus stop}
 \label {image-admin-view-stop-3}
 \end {figure}
 
+\paragraph{} The tab that displays the list of routes that pass through a particular bus stop is shown in Figure~\ref{image-admin-view-stop-3}. This is important to note as it is a very helpful feature for the users. Commuters sometimes just want to know which bus routes pass through a particular bus stop and that information is provided in this tab. Similar to the previous pages and tabs, the routes and bus stops in this tab are clickable making navigation easier for the users.
+
+This page also contains tabs for the list of Feedback items as well as the Complaints received for the particular bus stop. After logging in, users can view these and possibly add their own, thereby providing feedback to the schedulers and the transport authority to make the service better.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-bus}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-bus}
+\caption [Screenshot - View Bus Details - Picture of Bus] {Screenshot - View Bus Details - Picture of Bus}
 \label {image-admin-view-bus}
 \end {figure}
 
+\paragraph{} Figure~\ref{image-admin-view-bus} shows the page where users can view the details of an individual bus. Following the previous UI convention, this page too uses the tabbed interface to provide users with a clean organised look to the information while providing all the information in one single page. Pictures of the bus are provided in one of the tabs so that users can identify the bus exactly. Information provided in other tabs include the bus profile, list of personnel attached to a bus and the list of feedback and complaints.
+
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-bus-2}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.45]{admin-view-bus-2}
+\caption [Screenshot - View Bus Details - List of Personnel of Bus] {Screenshot - View Bus Details - List of Personnel of Bus}
 \label {image-admin-view-bus-2}
 \end {figure}
 
-\begin {figure} [H]
-\centering
-\includegraphics[scale=0.4]{admin-view-bus-3}
-\caption [Screenshot - ] {Screenshot - }
-\label {image-admin-view-bus-3}
-\end {figure}
+\paragraph{} As mentioned previously, the page to view the details of an individual bus are given in Figure~\ref{image-admin-view-bus-2}. In this tab, the list of bus personnel attached to a bus (the bus owner, the driver, the conductor etc.) can be viewed by the user. Following the previous convention, the names of personnel can be clicked. the user will then be navigated to the respective bus personnel's details page. Again, this has been doen to improve navigation within the system for the users.
 
 \begin {figure} [H]
 \centering
-\includegraphics[scale=0.4]{admin-view-bus-personnel}
-\caption [Screenshot - ] {Screenshot - }
+\includegraphics[scale=0.3]{admin-view-bus-3}
+\caption [Screenshot - View Bus Details - List of Complaints of Bus] {Screenshot - View Bus Details - List of Complaints of Bus}
+\label {image-admin-view-bus-3}
+\end {figure}
+
+\paragraph{} Figure~\ref{image-admin-view-bus-3} shows the UI for the tab that shows the list of complaints recieved on a particular bus. This again is helpful to the commuters as well as the schedulers to identify errant drivers and operators who behave in an unprofessional manner. Figure~\ref{image-admin-view-bus-personnel}shows the page that displays the details of individual bus persons (owner, driver, conductor etc.). Following the previous convention, this page also uses the tabbed interface and feature buses and bus routes that can be clicked to navigate to its respective details page.
+
+\begin {figure} [H]
+\centering
+\includegraphics[scale=0.3]{admin-view-bus-personnel}
+\caption [Screenshot - View Bus Personnel Details] {Screenshot - View Bus Personnel Details}
 \label {image-admin-view-bus-personnel}
 \end {figure}
 
 \begin {figure} [H]
 \centering
 \includegraphics[scale=0.4]{admin-add-complaint}
-\caption [Screenshot - ] {Screenshot - }
+\caption [Screenshot - Adding a new Complaint] {Screenshot - Adding a new Complaint}
 \label {image-admin-add-complaint}
 \end {figure}
 
 \begin {figure} [H]
 \centering
 \includegraphics[scale=0.4]{admin-add-feedback}
-\caption [Screenshot - ] {Screenshot - }
+\caption [Screenshot - Adding a new Feedback item] {Screenshot - Adding a new Feedback item}
 \label {image-admin-add-feedback}
 \end {figure}
+
+\paragraph{} Figures~\ref{image-admin-add-complaint} and ~\ref{image-admin-add-feedback} show the UI of the page that allows the users to add a complaint or a feedback item. Users can choose from the relevant dropdown options and submit the complaint or feedback item. 
+
+Dropdown options include but are not limited to,
+\begin{itemize}
+\item Bus Delays
+\item Overcrowded Buses
+\item Loitering at Bus Stop
+\item Not issuing a valid ticket
+\item Reckless driving
+\item Neglecting road rules
+\item Overcharging a bus fare
+\item Rude/discourteous service
+\item Unhygienic/non-presentable appearance and/or attire
+\end{itemize}
+
+Admin users can expand this list in the future. When a complaint type is chosen, the system automatically displays the list of related objects. For instance, if a complaint type related to bus routes is chosen, all the bus routes are shown in the follwoing dropdown menu for the user to choose from. This improves usability and prevents complaints being filed under the wrong type.
+
+As mentioned previously, the main difference between a feedback item and a complaint is the fact that feedback item can be a positive or negative point, whereas a complaint is a negative aspect that is being expressed. Feedback items can be used for more general comments from the users.
 
 
 
 \section{Testing the prototype}
 
-\paragraph{} 
+\paragraph{} Before deploying Gaman on to the main server and testing it with the users, unit testing was done on the code of the system. Each of the functions tested by navigating in multiple browsers and checking to see if the system worked as intended. Testing was done as a continuous improvement effort and no proper structured test plan was used as such. As the prototype was built in rapid time, there wasn't sufficient resources to have a fully functioning test phase. 
 
+A few bugs were found after the deployment but they were identified early and fixed as soon as possible. Functions that needed to be tested with logins were continuously tested and reviewed before moving on to the next feature. Those system functionality are listed below.
 
+\begin{itemize}
+\item Login Functionality
+\item Adding new complaints
+\item Changing the status of complaints
+\item Adding new feedback items
+\item Changing the status of feedback items
+\item Viewing Complaints related to routes/stops/buses and bus personnel
+\item Viewing Feedback Items related to routes/stops/buses and bus personnel
+\item All admin functionalities
+	\begin{itemize}
+		\item Create, Read Update and Delete of Admin Users
+		\item Create, Read Update and Delete of Bus Routes
+		\item Create, Read Update and Delete of Bus Stops
+		\item Create, Read Update and Delete of Buses
+		\item Create, Read Update and Delete of Bus Personnel
+		\item Create, Read Update and Delete of Surveys
+		\item Managing and manipulating trip information related to surveys
+	\end{itemize}
+\end{itemize}
+
+Throughtout this chapter we saw what Gaman, the solution prototype was all about. Details of its architecture and its functions were provided to the reader and the system's inner workings were explained. The system's user interface was also displayed with a description of what each of the shown screens display. Next we shall take a look at the evaluation of the prototype at the hands of the stakeholders, the schedulers and the commuters of the trasnport system.
 
 

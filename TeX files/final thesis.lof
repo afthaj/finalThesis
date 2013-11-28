@@ -4,38 +4,39 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Current Bus Scheduling Process in SL}}{8}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Tiered Model of Information Systems}}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheduling Process of a Public Transport Company}}{18}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces An Automatic Data Collection System}}{24}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheduling Process of a Public Transport Company}}{19}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces An Automatic Data Collection System}}{25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Graph - Passenger Load Fluctuations - Trip 1}}{34}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Graph - Bus Loiter Time Data - Trip 1}}{35}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Stakeholders Diagram}}{36}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Requirements of Main Stakeholders}}{37}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Stages in the Timetabling Process Flow}}{37}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Graph - Passenger Load Fluctuations - Trip 1}}{36}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Graph - Bus Loiter Time Data - Trip 1}}{38}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Stakeholders Diagram}}{39}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Requirements of Main Stakeholders}}{40}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Stages in the Timetabling Process Flow}}{41}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Feasibility Matrix of Alternative Systems/Options}}{42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Proposed System Architecture}}{40}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Screenshot - Public Home Page}}{44}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Screenshot - Admin Home Page}}{45}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Screenshot - }}{46}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Screenshot - }}{47}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Screenshot - }}{47}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot - }}{48}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Screenshot - }}{48}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Screenshot - }}{49}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot - }}{49}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Screenshot - }}{50}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Screenshot - }}{51}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Screenshot - }}{52}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Screenshot - }}{52}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Screenshot - }}{53}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Screenshot - }}{53}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Proposed System Architecture}}{45}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Screenshot - Public Home Page}}{50}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Screenshot - Admin Home Page}}{51}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Screenshot - Survey Trip information}}{52}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Screenshot - View Route Details - Route Map}}{53}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Screenshot - View Route Details - List of Stops}}{54}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Screenshot - View Route Details - Complaints}}{55}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Screenshot - View Bus Stop Details - Panorama of stop location}}{56}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Screenshot - View Bus Stop Details - Location of stop on a map}}{56}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot - View Bus Stop Details - Routes that pass through bus stop}}{57}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Screenshot - View Bus Details - Picture of Bus}}{58}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Screenshot - View Bus Details - List of Personnel of Bus}}{59}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Screenshot - View Bus Details - List of Complaints of Bus}}{60}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Screenshot - View Bus Personnel Details}}{60}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Screenshot - Adding a new Complaint}}{61}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Screenshot - Adding a new Feedback item}}{61}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Chart - Rating - Information Portal}}{56}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Chart - Rating - Bus Route Finder}}{57}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Chart - Rating - Feedback Functionality}}{58}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Chart - Rating - Complaints Functionality}}{59}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Chart - Rating - User Interface}}{61}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Chart - Survey Question}}{62}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Chart - Rating - Information Portal}}{66}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Chart - Rating - Bus Route Finder}}{68}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Chart - Rating - Feedback Functionality}}{69}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Chart - Rating - Complaints Functionality}}{70}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Chart - Rating - User Interface}}{71}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Chart - Survey Question}}{72}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Future Work and possible Expansion of Concept}}{64}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Future Work and possible Expansion of Concept}}{74}
 \addvspace {10\p@ }
